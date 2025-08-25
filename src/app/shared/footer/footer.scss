@@ -5,7 +5,7 @@
 }
 
 footer {
-    padding: 48px 32px 0px 32px; 
+    padding: 48px 0px 0px 0px; 
     background-color: #89BCD9;
     height: 150px;
 }
@@ -16,6 +16,8 @@ footer {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .legal_notice {
