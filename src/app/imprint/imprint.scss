@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #252d33;
+    font-family: Josefin Sans;
+}
+
+h1 {
+    color: #89bbd9;
+    font-family: Anta;
+    font-weight: 400;
+    font-size: 54px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main_body {
+    padding-bottom: 40px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #89bbd9;
+    margin-bottom: 24px;
+}
+
+p   {
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: #89bbd9;
+}
+
+.service_provider,
+.contaact_options,
+.online_presences,
+.disclaimer {
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}

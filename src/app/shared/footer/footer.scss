@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Josefin Sans;
+}
+
+footer {
+    padding: 48px 32px 0px 32px; 
+    background-color: #89BCD9;
+    height: 150px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.legal_notice {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 12px;
+    >a {
+        text-decoration: none;
+        color: #262E34;
+        &:hover{
+            color: whitesmoke;
+        }
+    }
+}
+
+.name {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    height: 74px;
+    cursor: pointer;
+    >#salutation {
+        color: whitesmoke;
+    }
+    >#job_title {
+        color: black;
+    }
+    >img {
+      width: 52px;
+      height: 38px;
+      &:hover{
+        width: 64px;
+        transition: opacity 1s ease-out;
+      }
+    }
+}
+
+.socialmedia {
+    display: flex;
+    align-items: end;
+    gap: 24px;
+    >a {
+        width: 30px;
+        height: 30px;
+        &:hover{
+            background-color: whitesmoke;
+            border-radius: 100%;
+        }
+    }
+}
