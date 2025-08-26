@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+
+main {
+  background-color: #252d33;
+}
+
+.all {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.hero_img {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  > img {
+    height: 850px;
+    width: 700px;
+    background-image: url('../../../../public/imgs/icons/large_ellipse_desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(0deg);
+    &:hover {
+        transform: rotate(10deg);
+    }
+  }
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.up {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    padding-top: 160px;
+}
+
+.block {
+    width: 32px;
+    height: 64px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  > img {
+    width: 52px;
+    height: 38px;
+    transition: width 0.5s ease-out;
+    &:hover {
+        width: 64px;
+    }
+  }
+  > #salutation {
+    color: whitesmoke;
+    font-family: anta;
+  }
+  > #job_title {
+    color: #89bcd9;
+    font-family: Josefin Sans;
+  }
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  > img {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 64px;
+}
+.name {
+    >h1 {
+    color: whitesmoke;
+    font-family: anta;
+    font-size: 88px;
+    font-weight: 400;
+    }
+}
+
+.job {
+    >h2 {
+    color: whitesmoke;
+    font-family: Josefin Sans;
+    font-size: 40px;
+    font-weight: 400;
+    }
+}
+
+.arrow_down {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}

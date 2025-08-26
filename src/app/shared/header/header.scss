@@ -1,97 +1,102 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: Josefin Sans;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Josefin Sans;
 }
 
+
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px; 
-    background-color: #89BCD9;
-    height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #89bcd9;
+  height: 100px;
 }
 
 .navbar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 32px;
-    padding-right: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .name {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    font-size: 16px;
-    cursor: pointer;
-    >#salutation {
-        color: whitesmoke;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 16px;
+  cursor: pointer;
+  > #salutation {
+    color: whitesmoke;
+  }
+  > #job_title {
+    color: black;
+  }
+  > img {
+    width: 52px;
+    height: 38px;
+    transition: width 0.5s ease-out;
+    &:hover {
+        width: 64px;
     }
-    >#job_title {
-        color: black;
-    }
-    >img {
-      width: 52px;
-      height: 38px; 
-    }
+  }
 }
 
 .section_nav {
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    >a {
-        width: 100;
-        font-size: 26px;
-        font-weight: 500;
-        text-decoration: none;
-        color: #262E34;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  > a {
+    width: 100;
+    font-size: 26px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #262e34;
 
-        &:hover{
-            color: whitesmoke;
-        }
+    &:hover {
+      color: whitesmoke;
     }
+  }
 }
 
 .language {
-    width: 20%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 8px;
-    >button {
-        padding: 0;
-        width: 40px;
-        height: 32px;
-        cursor: pointer;
-        &:hover{
-            color: whitesmoke;
-        }
+  width: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+  > button {
+    padding: 0;
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+    &:hover {
+      color: whitesmoke;
     }
-    >#en {
-        font-size: 18px;
-        font-weight: 400;
-        border: none;
-        background-color: #89BCD9;
-        background-image: url('../../../../public/imgs/icons/Ellipse\ 24.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    >#de {
-        font-size: 18px;
-        font-weight: 400;
-        border: none;
-        background-color: #89BCD9;
-    }  
+  }
+  > #en {
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    background-color: #89bcd9;
+    background-image: url("../../../../public/imgs/icons/Ellipse\ 24.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  > #de {
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    background-color: #89bcd9;
+  }
 }
