@@ -2,4 +2,73 @@
     box-sizing: border-box;
     margin: 0;
     background-color: #252d33;
+    font-family: Josefin Sans;
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: Anta;
+    color: #89bbd9;
+    font-weight: 400;
+    font-size: 60px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.informations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin-bottom: 24px;
+}
+
+.located {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    font-size: 30px;
+    font-weight: 700;
+    >img {
+        margin-right: 8px;
+        width: 75px;
+    }
+}
+
+.blue {
+    color: #89bbd9;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    width: 500px;
+}
+
+.contact_link {
+    width: 1000px;
+    display: flex;
+    justify-content: end;
+    >button {
+        border: solid 1px #89bbd9;
+        border-radius: 20px;
+        height: 40px;
+        width: 112px;
+        >a {
+            text-decoration: none;
+            color: #89bbd9;
+            font-size: 18px;
+        }
+    }
 }

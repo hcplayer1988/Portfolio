@@ -1,5 +1,75 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
+    
+}
+
+main {
+    padding-bottom: 64px;
     background-color: #252d33;
+}
+
+.content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: Anta;
+    color: #89bbd9;
+    font-weight: 400;
+    font-size: 60px;
+    padding-top: 64px;
+    margin-bottom: 64px;
+}
+
+.box {
+    width: 1000px;
+    display: flex;
+}
+
+.learning {
+    color: whitesmoke;
+    font-family: Josefin Sans;
+    font-size: 18px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(../../../../public/imgs/icons/ellipse_grey.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 18px;
+    background-color: transparent;
+}
+
+.skillset {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill {
+    >img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    }
+}
+
+.description {
+    width: 300px;
+    
 }

@@ -3,3 +3,29 @@
     margin: 0;
     background-color: #252d33;
 }
+
+.content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #89bbd9;
+    font-family: Anta;
+    font-size: 60px;
+    font-weight: 400;
+}
+.projekt_title {
+    color: #89bbd9;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.project_container {
+    color: whitesmoke;
+    font-family: Josefin Sans;
+}
