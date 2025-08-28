@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     background-color: #252d33;
+    font-family: Josefin Sans;
 }
 
 .content {
@@ -27,5 +28,20 @@ h1 {
 
 .project_container {
     color: whitesmoke;
-    font-family: Josefin Sans;
+}
+
+.preview {
+    width: 1000px;
+    display: flex;
+    justify-content: end;
+}
+
+.buttons button {
+    border: solid 1px #89bbd9;
+    border-radius: 20px;
+    height: 40px;
+    width: 112px;
+    color: #89bbd9;
+    font-size: 18px;
+    margin-left: 24px;
 }

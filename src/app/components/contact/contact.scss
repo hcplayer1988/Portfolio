@@ -3,3 +3,97 @@
     margin: 0;
     background-color: #252d33;
 }
+
+.content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    padding-bottom: 64px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 64px;
+    margin-bottom: 64px;
+    padding-right: 32px;
+}
+
+.center_box {
+    margin: auto;
+}
+
+.right_box {
+    margin-left: auto;
+}
+
+h2 {
+    color: #89bbd9;
+    font-family: Anta;
+    font-weight: 400;
+    font-size: 54px;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    font-family: Josefin Sans;
+    width: 1000px;
+    padding-bottom: 48px;
+}
+
+.description {
+    width: 480px;
+}
+
+.contacts {
+    width: 480px;
+}
+
+.name_email {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    font-family: Josefin Sans;
+    color: #89bbd9;
+    >span {
+        padding-left: 32px;
+        padding-bottom: 2px;
+    }
+}
+
+.message input {
+    width: 1000px;
+    height: 150px;
+    border: solid 1px #89bbd9;
+    border-radius: 30px;
+    font-weight: 400;
+}
+
+.privacy_policy {
+    display: flex;
+    width: 1000px;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Josefin Sans;
+}
+
+.send button {
+    border: solid 1px #888c8a;
+    border-radius: 20px;
+    height: 40px;
+    width: 112px;
+    color: #888c8a;
+    font-size: 18px;
+}
