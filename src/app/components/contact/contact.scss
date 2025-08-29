@@ -56,10 +56,61 @@ h2 {
     width: 480px;
 }
 
-.name_email {
+.name_email_message {
     display: flex;
     justify-content: space-between;
     width: 1000px;
+}
+
+.name_email {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.name_input {
+    display: flex;
+    flex-direction: column;
+    >label {
+        color: #89bbd9;
+        font-family: Josefin Sans;
+        padding-bottom: 4px;
+    }
+    >input {
+        border: solid 1px #89bbd9;
+        border-radius: 30px;
+        font-family: Josefin Sans;
+        font-size: 18px;
+        color: whitesmoke;
+        padding-left: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 480px;
+        height: 56px;
+    }
+}
+
+.mail_input {
+    display: flex;
+    flex-direction: column;
+    >label {
+        color: #89bbd9;
+        font-family: Josefin Sans;
+        padding-bottom: 4px;    
+    }
+    >input {
+        border: solid 1px #89bbd9;
+        border-radius: 30px;
+        font-family: Josefin Sans;
+        font-size: 18px;
+        color: whitesmoke;
+        padding-left:24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 480px;
+        height: 56px;
+    }
 }
 
 .message {
@@ -67,18 +118,24 @@ h2 {
     flex-direction: column;
     font-family: Josefin Sans;
     color: #89bbd9;
-    >span {
+    >label {
         padding-left: 32px;
         padding-bottom: 2px;
     }
 }
 
-.message input {
+.message textarea {
     width: 1000px;
     height: 150px;
     border: solid 1px #89bbd9;
     border-radius: 30px;
     font-weight: 400;
+    font-size: 18px;
+    color: whitesmoke;
+    padding-left: 24px;
+    padding-top: 8px;
+    margin-bottom: 8px;
+    font-family: Josefin Sans;
 }
 
 .privacy_policy {
@@ -87,9 +144,17 @@ h2 {
     justify-content: flex-start;
     align-items: center;
     font-family: Josefin Sans;
+    margin-bottom: 16px;
+    >img {
+        cursor: pointer;
+        &:hover {
+            background-color: #888c8a;
+            border-radius: 30px;
+        }
+    }
 }
 
-.send button {
+.send input {
     border: solid 1px #888c8a;
     border-radius: 20px;
     height: 40px;

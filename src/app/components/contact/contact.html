@@ -26,19 +26,32 @@
                 <p>Tel: 0174 2562430</p>
             </div>
         </div>
+<div class="name_email_message">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm = "ngForm">
         <div class="name_email">
             <div class="name_input">
-                <span>Your Name</span>
-                <input type="text">
+                <label for="name">Name</label>
+                <input #name="ngModel" minlength="4" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.." required>
+                @if (!name.valid && name.touched) {
+                    <span>Please enter a Name</span>
+                }
             </div>
+
             <div class="mail_input">
-                <span>Your Email</span>
-                <input type="text">
+                <label for="email">Your E-Mail</label>
+                <input #email="ngModel" minlength="4" [(ngModel)]="contactData.email" type="text" id="email" name="email" placeholder="Your E-Mail.." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                @if (!email.valid && email.touched) {
+                    <span>Please enter a E-Mail</span>
+                }
             </div>
         </div>
+
         <div class="message">
-            <span>Your Message</span>
-            <input type="text">
+            <label for="subject">Your Message</label>
+            <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+            @if (!message.valid && message.touched) {
+                <span>Please enter a message</span>
+            }
         </div>
         <div class="privacy_policy">
             <img src="./imgs/icons/ellipse_empty.png" alt="">
@@ -48,7 +61,11 @@
             </span>
         </div>
         <div class="send">
-            <button>Send</button>
+            <input type="submit" value="Send">
         </div>
+    </form>
+</div>
     </div>
 </main>
+
+
