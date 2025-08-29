@@ -17,21 +17,27 @@
 }
 
 .head {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 64px;
-    margin-bottom: 64px;
-    padding-right: 32px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .center_box {
-    margin: auto;
+  grid-column: 1;
+  justify-self: center;
+  text-align: center;
 }
 
 .right_box {
-    margin-left: auto;
+  grid-column: 2;
+  justify-self: end;
 }
+
+
 
 h2 {
     color: #89bbd9;
@@ -152,6 +158,11 @@ h2 {
             border-radius: 30px;
         }
     }
+}
+
+.send {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .send input {
