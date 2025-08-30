@@ -26,11 +26,28 @@ main {
     margin-bottom: 64px;
 }
 
+.scrolling_content {
+    display: flex;
+    width: max-content;
+    gap: 5rem;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-33%);
+    }
+}
+
 .references {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     font-size: 18px;
+    overflow: hidden;
 }
 
 .reference_bg {
@@ -42,6 +59,7 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    min-width: 350px;
     width: 350px;
     height: 350px;
 }
