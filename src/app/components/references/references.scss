@@ -1,8 +1,12 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    background-color: #252d33;
+    
     font-family: Josefin Sans;
+}
+
+main {
+    background-color: #252d33;
 }
 
 .content {
@@ -24,13 +28,31 @@
 
 .references {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
     font-size: 18px;
 }
 
+.reference_bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../../public/imgs/icons/ellipse_grey.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+}
+
 .reference {
-    width: 400px;
-    
+    width: 280px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .name {
