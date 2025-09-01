@@ -15,7 +15,7 @@ main {
 
 .all {
   box-sizing: border-box;
-  width: 100%;
+  @include w1440;
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 32px;

@@ -6,7 +6,15 @@
 
 /* imports
 @import '../../mixins/mixins.scss';
+
 @include centerCenter;
+@include blueFont;
+@include whiteFont;
+@include backgroundBlue;
+@include backgroundDark;
+@include backgroundGrey;
+
+
 */
 
 @mixin blueFont {
@@ -27,4 +35,8 @@
 
 @mixin backgroundGrey {
     background-color: #2b363d;
+}
+
+@mixin w1440 {
+    width: 1440px;
 }

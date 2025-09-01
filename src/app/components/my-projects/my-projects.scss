@@ -41,7 +41,7 @@ h1 {
 .project_container {
     color: whitesmoke;
     height: 544px;
-    width: 1440px;
+    @include w1440;
     @include backgroundGrey;
     display: flex;
 }
