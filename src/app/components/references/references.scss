@@ -5,6 +5,8 @@
     font-family: Josefin Sans;
 }
 
+@import '../../mixins/mixins.scss';
+
 main {
     background-color: #252d33;
 }
@@ -51,10 +53,8 @@ main {
 }
 
 .reference_bg {
-    display: flex;
+    @include centerCenter;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: url('../../../../public/imgs/icons/ellipse_grey.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -67,10 +67,8 @@ main {
 .reference {
     width: 280px;
     height: 280px;
-    display: flex;
+    @include centerCenter;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .name {

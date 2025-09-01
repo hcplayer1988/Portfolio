@@ -3,9 +3,10 @@
     margin: 0;
     font-family: Josefin Sans;
 }
+@import '../../mixins/mixins.scss';
 
 main {
-    background-color: #252d33;
+    @include backgroundDark;
 }
 
 .content {
@@ -19,31 +20,35 @@ main {
 }
 
 h1 {
-    color: #89bbd9;
+    @include blueFont;
     font-family: Anta;
     font-size: 60px;
     font-weight: 400;
+    padding-bottom: 40px
 }
 .projekt_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #89bbd9;
+    @include centerCenter;
+    @include blueFont;
     font-size: 30px;
     font-weight: 500;
     height: 97px;
     width: 250px;
-    background-color: #2b363d;
+    @include backgroundGrey;
     border: solid 0px;
     border-radius: 24px 24px 0px 0px;
 }
 
 .project_container {
     color: whitesmoke;
-    height: 548px;
+    height: 544px;
     width: 1440px;
-    background-color: #2b363d;
+    @include backgroundGrey;
     display: flex;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
 }
 
 .preview {
@@ -61,5 +66,5 @@ h1 {
     font-size: 18px;
     margin-left: 24px;
     cursor: pointer;
-    background-color: #252d33;
+    @include backgroundGrey;
 }

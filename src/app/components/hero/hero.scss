@@ -4,6 +4,8 @@
   
 }
 
+@import '../../mixins/mixins.scss';
+
 main {
   background-color: #252d33;
   overflow-y: auto;
@@ -90,10 +92,8 @@ app-header {
 }
 
 .logo {
-  display: flex;
+  @include centerCenter;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   > img {
     width: 52px;
     height: 38px;

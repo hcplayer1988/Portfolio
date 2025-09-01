@@ -1,0 +1,30 @@
+@mixin centerCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* imports
+@import '../../mixins/mixins.scss';
+@include centerCenter;
+*/
+
+@mixin blueFont {
+    color: #89bcd9;
+}
+
+@mixin whiteFont {
+    color: whitesmoke;
+}
+
+@mixin backgroundBlue {
+    background-color: #89bcd9;
+}
+
+@mixin backgroundDark {
+    background-color: #252d33;
+}
+
+@mixin backgroundGrey {
+    background-color: #2b363d;
+}

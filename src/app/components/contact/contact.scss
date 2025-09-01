@@ -4,6 +4,8 @@
     background-color: #252d33;
 }
 
+@import '../../mixins/mixins.scss';
+
 .content {
     width: 100%;
     max-width: 1440px;

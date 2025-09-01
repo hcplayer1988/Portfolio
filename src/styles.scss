@@ -8,6 +8,8 @@
   scrollbar-color: #89bcd9 #dddddd00;
 }
 
+@import '../src/app/mixins/mixins.scss';
+
 ::-webkit-scrollbar-thumb {
   background-color: #89bcd9;
   border-radius: 2px;

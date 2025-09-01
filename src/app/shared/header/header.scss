@@ -4,6 +4,7 @@
   font-family: Josefin Sans;
 }
 
+@import '../../mixins/mixins.scss';
 
 header {
   display: flex;
@@ -11,7 +12,7 @@ header {
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #89bcd9;
+  @include backgroundBlue;
   height: 100px;
 }
 
@@ -36,7 +37,7 @@ header {
   font-size: 16px;
   cursor: pointer;
   > #salutation {
-    color: whitesmoke;
+    @include whiteFont;
   }
   > #job_title {
     color: black;
@@ -63,7 +64,7 @@ header {
     color: #262e34;
 
     &:hover {
-      color: whitesmoke;
+      @include whiteFont;
     }
   }
 }
@@ -80,14 +81,14 @@ header {
     height: 32px;
     cursor: pointer;
     &:hover {
-      color: whitesmoke;
+      @include whiteFont;
     }
   }
   > #en {
     font-size: 18px;
     font-weight: 400;
     border: none;
-    background-color: #89bcd9;
+    @include backgroundBlue;
     background-image: url("../../../../public/imgs/icons/Ellipse\ 24.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -97,6 +98,6 @@ header {
     font-size: 18px;
     font-weight: 400;
     border: none;
-    background-color: #89bcd9;
+    @include backgroundBlue;
   }
 }

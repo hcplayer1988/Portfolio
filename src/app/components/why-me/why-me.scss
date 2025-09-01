@@ -6,6 +6,8 @@
     color: whitesmoke;
 }
 
+@import '../../mixins/mixins.scss';
+
 h1 {
     font-family: Anta;
     color: #89bbd9;
@@ -16,10 +18,8 @@ h1 {
 }
 
 .content {
-    display: flex;
+    @include centerCenter;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     box-sizing: border-box;
     width: 100%;
     max-width: 1440px;
@@ -27,9 +27,7 @@ h1 {
 }
 
 .informations {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centerCenter;
     width: 1000px;
     margin-bottom: 24px;
 }
