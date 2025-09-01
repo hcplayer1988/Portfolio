@@ -6,6 +6,9 @@
 
 main {
   background-color: #252d33;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .all {
@@ -16,33 +19,51 @@ main {
   padding-left: 32px;
   padding-right: 32px;
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 100px);
+}
+
+app-header {
+  position: sticky;
+  top: 0;
 }
 
 .left {
   display: flex;
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
 }
 
-.hero_img {
+.bg {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: end;
-  > img {
-    height: 850px;
-    width: 700px;
-    background-image: url('../../../../public/imgs/icons/large_ellipse_desktop.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    transition: transform 0.5s ease-in-out;
-    transform: rotate(0deg);
-    &:hover {
-        transform: rotate(10deg);
-    }
-  }
 }
+
+.bg-ellipse {
+  position: absolute;
+  height: 900px;
+  width: 700px;
+  background-image: url('../../../../public/imgs/icons/large_ellipse_desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center center;
+}
+
+.bg:hover .bg-ellipse {
+  transform: rotate(20deg);
+}
+
+.hero_img {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
 
 .right {
   width: 50%;

@@ -2,7 +2,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    
 }
 
 main {
@@ -31,6 +30,7 @@ h1 {
 .box {
     width: 1000px;
     display: flex;
+    justify-content: space-between;
 }
 
 .learning {
@@ -53,23 +53,35 @@ h1 {
 }
 
 .skillset {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 20px;
-  justify-items: center;
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    height: 400px;
+    width: 500px;
 }
 
-.skill {
-    >img {
-    width: 100px;
-    height: auto;
-    object-fit: contain;
+.skill { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    margin-bottom: 8px;
+    >img{
+        display: block;
+        height: 60px;
+        object-fit: contain;
     }
+}
+
+.name {
+    font-family: Josefin Sans;
+    font-size: 18px;
+    color: #89bbd9;
 }
 
 .description {
     width: 300px;
-    
 }
