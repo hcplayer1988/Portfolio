@@ -15,7 +15,7 @@ main {
 
 .all {
   box-sizing: border-box;
-  @include w1440;
+  //@include w1440;
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 32px;
@@ -55,7 +55,7 @@ app-header {
 }
 
 .bg:hover .bg-ellipse {
-  transform: rotate(20deg);
+  transform: rotate(-20deg);
 }
 
 .hero_img {
