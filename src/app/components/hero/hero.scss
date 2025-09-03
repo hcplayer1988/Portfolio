@@ -15,11 +15,11 @@ main {
 
 .all {
   box-sizing: border-box;
-  //@include w1440;
+  // @include w1440;
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   height: calc(100vh - 100px);
 }
@@ -33,6 +33,7 @@ app-header {
   display: flex;
   width: 100%;
   box-sizing: border-box;
+  
 }
 
 .bg {
@@ -44,8 +45,9 @@ app-header {
 
 .bg-ellipse {
   position: absolute;
-  height: 900px;
-  width: 700px;
+  bottom: 0;
+  height: 750px;
+  width: 600px;
   background-image: url('../../../../public/imgs/icons/large_ellipse_desktop.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -73,8 +75,9 @@ app-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   box-sizing: border-box;
+  padding-bottom: 64px;
 }
 
 .up {
@@ -127,13 +130,13 @@ app-header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 64px;
+    padding-bottom: 256px;
 }
 .name {
     >h1 {
     color: whitesmoke;
     font-family: anta;
-    font-size: 88px;
+    font-size: 80px;
     font-weight: 400;
     }
 }
@@ -142,7 +145,7 @@ app-header {
     >h2 {
     color: whitesmoke;
     font-family: Josefin Sans;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 400;
     }
 }

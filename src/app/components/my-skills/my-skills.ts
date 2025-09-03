@@ -33,5 +33,9 @@ export class MySkills {
       img: "./imgs/icons/typeScript.png",
       name: "TypeScript"
     },
+    {
+      img: "./imgs/icons/git.png",
+      name: "GitHub"
+    },
   ]
 }

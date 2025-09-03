@@ -1,33 +1,43 @@
 <main>
   <div class="content">
     <h1>My Projects</h1>
+
     <div class="titles">
-        <div class="first_projekt_title">
-            <span>1. El Pollo Loco</span>
-        </div>
-        <div class="second_projekt_title">
-            <span>2. Join</span>
-        </div>
+      <div
+        class="first_projekt_title"
+        [class.selected]="activeProject === 'elPollo'"
+        (click)="switchProject('elPollo')"
+      >
+        <span>1. El Pollo Loco</span>
+      </div>
+
+      <div
+        class="second_projekt_title"
+        [class.selected]="activeProject === 'join'"
+        (click)="switchProject('join')"
+      >
+        <span>2. Join</span>
+      </div>
     </div>
   </div>
 
   <div class="bg_grey">
     <div class="project_container">
-      <div class="infos">
-        
+      <div class="infos el_pollo_loco" *ngIf="activeProject === 'elPollo'">
         <div class="info_box">
           <div class="ellipse">
-            <img src="./imgs/icons/ellipse_full.png" alt="" />
+            <img src="./imgs/icons/ellipse_full.png" alt="Ellipse" />
           </div>
-          <div class="infos">
+          <div class="info_content">
             <div class="info_header">
               <h2>About the project</h2>
+              <span>Durationn: 3 Weeks</span>
             </div>
             <div class="info_txt">
-              <span
-                >A simple Jump-and-Run game based on an abject-oriented
-                approach. Help Pepe to find coins and bottles to fight aiganst
-                the chickens.
+              <span>
+                A simple Jump-and-Run game based on an object-oriented approach.
+                Help Pepe collect coins and bottles to fight against the
+                chickens.
               </span>
             </div>
           </div>
@@ -35,17 +45,16 @@
 
         <div class="info_box work_process">
           <div class="ellipse">
-            <img src="./imgs/icons/ellipse_full.png" alt="" />
+            <img src="./imgs/icons/ellipse_full.png" alt="Ellipse" />
           </div>
-          <div class="infos">
+          <div class="info_content">
             <div class="info_header">
-              <h2>About the project</h2>
+              <h2>Work Process</h2>
             </div>
             <div class="info_txt">
-              <span
-                >A simple Jump-and-Run game based on an abject-oriented
-                approach. Help Pepe to find coins and bottles to fight aiganst
-                the chickens.
+              <span>
+                Built with vanilla JavaScript, focusing on modular architecture,
+                sprite animation, and collision detection.
               </span>
             </div>
           </div>
@@ -53,17 +62,70 @@
 
         <div class="info_box learned">
           <div class="ellipse">
-            <img src="./imgs/icons/ellipse_full.png" alt="" />
+            <img src="./imgs/icons/ellipse_full.png" alt="Ellipse" />
           </div>
-          <div class="infos">
+          <div class="info_content">
             <div class="info_header">
-              <h2>About the project</h2>
+              <h2>What I Learned</h2>
             </div>
             <div class="info_txt">
-              <span
-                >A simple Jump-and-Run game based on an abject-oriented
-                approach. Help Pepe to find coins and bottles to fight aiganst
-                the chickens.
+              <span>
+                Strengthened my understanding of OOP, canvas rendering, and
+                responsive game design.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="infos join" *ngIf="activeProject === 'join'">
+        <div class="info_box">
+          <div class="ellipse">
+            <img src="./imgs/icons/ellipse_full.png" alt="Ellipse" />
+          </div>
+          <div class="info_content">
+            <div class="info_header">
+              <h2>About the project</h2>
+              <span>Durationn: 5 Weeks</span>
+            </div>
+            <div class="info_txt">
+              <span>
+                A task management app inspired by Trello. Built with HTML, CSS,
+                and JavaScript, featuring drag-and-drop and local storage.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info_box work_process">
+          <div class="ellipse">
+            <img src="./imgs/icons/ellipse_full.png" alt="Ellipse" />
+          </div>
+          <div class="info_content">
+            <div class="info_header">
+              <h2>Work Process</h2>
+            </div>
+            <div class="info_txt">
+              <span>
+                Implemented modular JS components, dynamic DOM manipulation, and
+                user-friendly UI transitions.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info_box learned">
+          <div class="ellipse">
+            <img src="./imgs/icons/ellipse_full.png" alt="Ellipse" />
+          </div>
+          <div class="info_content">
+            <div class="info_header">
+              <h2>What I Learned</h2>
+            </div>
+            <div class="info_txt">
+              <span>
+                Improved my skills in event delegation, state management, and
+                accessibility best practices.
               </span>
             </div>
           </div>
@@ -74,17 +136,25 @@
         <div class="technologies">
           <div class="headline"><span>Technologies</span></div>
           <div class="technologie_img">
-            <img src="./imgs/icons/html.png" alt="" />
-            <img src="./imgs/icons/css.png" alt="" />
-            <img src="./imgs/icons/javaScript.png" alt="" />
+            <img
+              *ngFor="let tech of projects[activeProject].technologies"
+              [src]="tech.icon"
+              [alt]="tech.name"
+            />
           </div>
         </div>
+
         <div class="preview_img">
-          <img src="./imgs/img/polllo_loco.png" alt="" />
+          <img [src]="projects[activeProject].preview" alt="Project Preview" />
         </div>
+
         <div class="buttons">
-          <button>Live Test</button>
-          <button>Github</button>
+          <a [href]="projects[activeProject].liveLink" target="_blank">
+            <button>Live Test</button>
+          </a>
+          <a [href]="projects[activeProject].githubLink" target="_blank">
+            <button>GitHub</button>
+          </a>
         </div>
       </div>
     </div>
