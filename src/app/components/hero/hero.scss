@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  
 }
 
 @import '../../mixins/mixins.scss';
@@ -33,7 +32,6 @@ app-header {
   display: flex;
   width: 100%;
   box-sizing: border-box;
-  
 }
 
 .bg {
@@ -68,7 +66,6 @@ app-header {
   align-items: end;
 }
 
-
 .right {
   width: 50%;
   height: 100%;
@@ -81,17 +78,17 @@ app-header {
 }
 
 .up {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    gap: 200px;
-    padding-top: 160px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+  padding-top: 160px;
 }
 
 .block {
-    width: 32px;
-    height: 64px;
+  width: 32px;
+  height: 64px;
 }
 
 .logo {
@@ -102,7 +99,7 @@ app-header {
     height: 38px;
     transition: width 0.5s ease-out;
     &:hover {
-        width: 64px;
+      width: 64px;
     }
   }
   > #salutation {
@@ -126,34 +123,48 @@ app-header {
 }
 
 .middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 256px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 256px;
 }
 .name {
-    >h1 {
+  > h1 {
     color: whitesmoke;
     font-family: anta;
     font-size: 80px;
     font-weight: 400;
-    }
+  }
 }
 
 .job {
-    >h2 {
+  > h2 {
     color: whitesmoke;
     font-family: Josefin Sans;
     font-size: 36px;
     font-weight: 400;
-    }
+  }
 }
 
 .arrow_down {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
 }
+
+// @include respond-to(lg) {
+//   .name {
+//     > h1 {
+//       font-size: 64px;
+//     }
+//   }
+
+//   .job {
+//     > h2 {
+//       font-size: 24px;
+//     }
+//   }
+// }

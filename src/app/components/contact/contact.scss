@@ -4,7 +4,7 @@
   background-color: #252d33;
 }
 
-@import "../../mixins/mixins.scss";
+@import '../../mixins/mixins.scss';
 
 .content {
   width: 100%;
@@ -144,6 +144,7 @@ h2 {
   padding-top: 8px;
   margin-bottom: 8px;
   font-family: Josefin Sans;
+  resize: none;
 }
 
 .privacy_policy {
