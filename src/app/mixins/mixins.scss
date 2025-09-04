@@ -1,7 +1,7 @@
 @mixin centerCenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* imports
@@ -18,25 +18,80 @@
 */
 
 @mixin blueFont {
-    color: #89bcd9;
+  color: #89bcd9;
 }
 
 @mixin whiteFont {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 @mixin backgroundBlue {
-    background-color: #89bcd9;
+  background-color: #89bcd9;
 }
 
 @mixin backgroundDark {
-    background-color: #252d33;
+  background-color: #252d33;
 }
 
 @mixin backgroundGrey {
-    background-color: #2b363d;
+  background-color: #2b363d;
 }
 
 @mixin w1440 {
-    width: 1440px;
+  width: 1440px;
 }
+
+// styles.scss oder responsive.scss
+
+$breakpoint-sm: 400px;
+$breakpoint-s: 790px;
+$breakpoint-md: 900px;
+$breakpoint-lg: 1125px;
+$breakpoint-xl: 1250px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == s {
+    @media (max-width: $breakpoint-s) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+}
+
+/*
+
+@include respond-to(sm) {
+  .
+}
+
+@include respond-to(s) {
+  .
+}
+
+@include respond-to(md) {
+  .
+}
+
+@include respond-to(lg) {
+  .
+}
+
+@include respond-to(xl) {
+  .
+}
+*/
