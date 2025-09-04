@@ -22,7 +22,7 @@ export class Contact {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php', // ennter my Domain later
+    endPoint: 'https://falko-katzer.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
