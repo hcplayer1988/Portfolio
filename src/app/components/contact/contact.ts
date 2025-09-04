@@ -19,7 +19,7 @@ export class Contact {
 
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://falko-katzer.de/sendMail.php',
@@ -33,7 +33,7 @@ export class Contact {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) { //  && !this.mailTest and th else if part only for testing can be deleted later!! Set the Mailttest to false!!!
+    if (ngForm.submitted && ngForm.form.valid) { //  && !this.mailTest and th else if part only for testing can be deleted later!! Set the Mailttest to false!!!
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -45,9 +45,11 @@ export class Contact {
           },
           complete: () => console.info('send post complete'), //console info can be deleted later
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    // } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
-      ngForm.resetForm();
-    }
+    //   ngForm.resetForm();
+    // }
   }
+}
+
 }
