@@ -204,8 +204,10 @@ app-header {
 
   .hero_img {
     > img {
-      width: 450px;
-      height: 500px;
+      width: 550px;
+      height: 600px;
+      padding-bottom: 60px;
+      padding-left: 24px;
     }
   }
 
@@ -224,27 +226,28 @@ app-header {
 }
 
 @include respond-to(md) {
+  .all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .middle {
     padding-bottom: 96px;
   }
 
-  .up {
-    gap: 96px;
+  .left {
+    padding-top: 256px;
   }
 
-  .socialmedia {
-    > img {
-      width: 24px;
-      height: 24px;
-    }
+  main {
+    flex-direction: column-reverse;
   }
 
-  @include respond-to(s) {
-    .all {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  .all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .right {
@@ -286,8 +289,8 @@ app-header {
   }
 
   .bg-ellipse {
-    height: 650px;
-    width: 650px;
+    height: 600px;
+    width: 600px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -303,8 +306,13 @@ app-header {
     width: 100%;
     height: 50%;
   }
+}
 
-  main {
-    flex-direction: column-reverse;
+@include respond-to(s) {
+  .bg-ellipse {
+    height: 500px;
+    width: 500px;
+    padding-top: 64px;
   }
+  
 }

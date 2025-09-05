@@ -1,87 +1,120 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-@import '../../mixins/mixins.scss';
+@import "../../mixins/mixins.scss";
 
 main {
-    padding-bottom: 64px;
-    background-color: #252d33;
+  padding-bottom: 64px;
+  background-color: #252d33;
 }
 
 .content {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-    font-family: Anta;
-    color: #89bbd9;
-    font-weight: 400;
-    font-size: 60px;
-    padding-top: 64px;
-    margin-bottom: 64px;
+  font-family: Anta;
+  color: #89bbd9;
+  font-weight: 400;
+  font-size: 60px;
+  padding-top: 64px;
+  margin-bottom: 64px;
 }
 
 .box {
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .learning {
-    color: whitesmoke;
-    font-family: Josefin Sans;
-    font-size: 18px;
-    width: 500px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-image: url(../../../../public/imgs/icons/ellipse_grey.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    gap: 18px;
-    background-color: transparent;
+  color: whitesmoke;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: url(../../../../public/imgs/icons/ellipse_grey.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 18px;
+  background-color: transparent;
 }
 
 .skillset {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    height: 400px;
-    width: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  height: 400px;
+  width: 500px;
 }
 
-.skill { 
-    @include centerCenter;
-    flex-direction: column;
+.skill {
+  @include centerCenter;
+  flex-direction: column;
 }
 
 .img {
-    margin-bottom: 8px;
-    >img{
-        display: block;
-        height: 60px;
-        object-fit: contain;
-    }
+  margin-bottom: 8px;
+  > img {
+    display: block;
+    height: 60px;
+    object-fit: contain;
+  }
 }
 
 .name {
-    font-family: Josefin Sans;
-    font-size: 18px;
-    color: #89bbd9;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  color: #89bbd9;
 }
 
 .description {
-    width: 300px;
+  width: 300px;
+}
+
+// Media Queries
+
+@include respond-to(lg) {
+  .box {
+    width: 750px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .learning {
+    width: 375px;
+    font-size: 16px;
+    width: 425px;
+    height: 325px;
+    gap: 16px;
+  }
+
+  .skillset {
+    width: 375px;
+    gap: 12px;
+  }
+
+  .img {
+    margin-bottom: 8px;
+    > img {
+      height: 40px;
+    }
+  }
+
+  .name {
+    font-size: 16px;
+  }
 }

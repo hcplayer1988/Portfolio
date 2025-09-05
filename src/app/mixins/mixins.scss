@@ -44,7 +44,8 @@
 // styles.scss oder responsive.scss
 
 $breakpoint-sm: 400px;
-$breakpoint-s: 790px;
+$breakpoint-s: 600px;
+$breakpoint-m: 800px;
 $breakpoint-md: 900px;
 $breakpoint-lg: 1125px;
 $breakpoint-xl: 1250px;
@@ -59,6 +60,10 @@ $breakpoint-xl: 1250px;
       @content;
     }
   } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == m {
     @media (max-width: $breakpoint-md) {
       @content;
     }

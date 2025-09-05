@@ -1,172 +1,265 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: Josefin Sans;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Josefin Sans;
 }
 
-@import '../../mixins/mixins.scss';
+@import "../../mixins/mixins.scss";
 
 main {
-    @include backgroundDark;
+  @include backgroundDark;
 }
 
 .content {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @include backgroundDark
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include backgroundDark;
 }
 
 h1 {
-    @include blueFont;
-    font-family: Anta;
-    font-size: 60px;
-    font-weight: 400;
-    padding-bottom: 40px
+  @include blueFont;
+  font-family: Anta;
+  font-size: 60px;
+  font-weight: 400;
+  padding-bottom: 40px;
 }
 
 .titles {
-    display: flex;
-    width: 100%;
-    padding-left: 48px
+  display: flex;
+  width: 100%;
+  padding-left: 48px;
 }
 
 .first_projekt_title {
-    @include centerCenter;
-    @include blueFont;
-    font-size: 30px;
-    font-weight: 500;
-    height: 97px;
-    width: 250px;
-    // @include backgroundGrey;
-    border: solid 0px;
-    border-radius: 24px 24px 0px 0px;
-    &:hover {
-        cursor: pointer;
-    }
+  @include centerCenter;
+  @include blueFont;
+  font-size: 30px;
+  font-weight: 500;
+  height: 97px;
+  width: 250px;
+  // @include backgroundGrey;
+  border: solid 0px;
+  border-radius: 24px 24px 0px 0px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .second_projekt_title {
-     @include centerCenter;
-    @include blueFont;
-    font-size: 30px;
-    font-weight: 500;
-    height: 97px;
-    width: 250px;
-    @include backgroundDark;
-    border: solid 0px;
-    border-radius: 24px 24px 0px 0px;
-    &:hover {
-        cursor: pointer;
-    }
+  @include centerCenter;
+  @include blueFont;
+  font-size: 30px;
+  font-weight: 500;
+  height: 97px;
+  width: 250px;
+  @include backgroundDark;
+  border: solid 0px;
+  border-radius: 24px 24px 0px 0px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .selected {
-  @include backgroundGrey; 
+  @include backgroundGrey;
   @include blueFont;
 }
 
-
 .bg_grey {
-    @include backgroundGrey;
+  @include backgroundGrey;
 }
 
 .project_container {
-    color: whitesmoke;
-    max-width: 1400px;
-    margin: 0 auto;
-    height: 544px;
-    @include backgroundGrey;
-    display: flex;
-    justify-content: center;
+  color: whitesmoke;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 544px;
+  @include backgroundGrey;
+  display: flex;
+  justify-content: center;
 }
 
 .infos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
 }
 
 .info_box {
-    display: flex;
-    flex-direction: row;
-    padding: 16px;
-    gap: 24px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  gap: 24px;
+  width: 100%;
 }
 
 .info_header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    padding-bottom: 12px;
-    >h2 {
-        font-size: 28px;
-    }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  > h2 {
+    font-size: 28px;
+  }
 }
 
 .info_txt {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .preview {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
 }
 
 .technologies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
 }
 
 .headline {
-    padding-bottom: 12px;
+  padding-bottom: 12px;
 }
 
 .technologie_img {
-    display: flex;
-    gap: 20px;
-    >img {
-        width: 40px;
-    }
+  display: flex;
+  gap: 20px;
+  > img {
+    width: 40px;
+  }
 }
 
 .preview_img {
-    >img {
-        border-radius: 30px;
-        height: 300px;
-        width: 450px;
-    }
+  > img {
+    border-radius: 30px;
+    height: 300px;
+    width: 450px;
+  }
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .buttons button {
-    border: solid 1px #89bbd9;
-    border-radius: 20px;
-    height: 40px;
-    width: 112px;
-    color: #89bbd9;
-    font-size: 18px;
-    margin-left: 24px;
-    cursor: pointer;
-    @include backgroundGrey;
-    &:hover {
-        @include backgroundBlue;
-        color: #252d33;
+  border: solid 1px #89bbd9;
+  border-radius: 20px;
+  height: 40px;
+  width: 112px;
+  color: #89bbd9;
+  font-size: 18px;
+  margin-left: 24px;
+  cursor: pointer;
+  @include backgroundGrey;
+  &:hover {
+    @include backgroundBlue;
+    color: #252d33;
+  }
+}
+
+// Media Queries
+
+@include respond-to(xl) {
+  .project_container {
+    max-width: 1120px;
+  }
+
+  .preview_img {
+    > img {
+      height: 200px;
+      width: 300px;
     }
+  }
+
+  .bg_grey {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .first_projekt_title {
+    font-size: 24px;
+    font-weight: 500;
+    height: 64px;
+    width: 200px;
+  }
+
+  .second_projekt_title {
+    font-size: 24px;
+    font-weight: 500;
+    height: 64px;
+    width: 200px;
+  }
+
+  .info_header {
+    > h2 {
+      font-size: 24px;
+    }
+  }
+
+  .info_txt {
+    font-size: 16px;
+  }
+}
+
+@include respond-to(lg) {
+  .content {
+    max-width: 800px;
+  }
+
+  .project_container {
+    max-width: 850px;
+  }
+}
+
+@include respond-to(md) {
+  .content {
+    max-width: 650px;
+  }
+
+  .project_container {
+    max-width: 750px;
+  }
+}
+
+@include respond-to(m) {
+  .project_container {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 18px;
+    padding-top: 18px;
+  }
+
+  .infos {
+    padding-bottom: 18px;
+    padding-top: 18px;
+    width: 100%;
+  }
+
+  .preview {
+    width: 100%;
+  }
+
+  .preview_img {
+    > img {
+      height: 300px;
+      width: 500px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .technologie_img {
+    padding-bottom: 12px;
+  }
 }

@@ -187,3 +187,49 @@ h2 {
   color: #888c8a;
   font-size: 18px;
 }
+
+// Media Queries
+
+@include respond-to(lg) {
+  .infos {
+    width: 750px;
+    gap: 12px;
+  }
+
+  .description {
+    width: 375px;
+  }
+
+  .contacts {
+    width: 375px;
+  }
+
+  .name_email_message {
+    justify-content: center;
+    width: 750px;
+  }
+
+  .privacy_policy {
+    width: 750px;
+  }
+
+  .name_email {
+    width: 750px;
+  }
+
+  form {
+    width: 750px;
+  }
+
+  .mail_input input {
+    width: 355px;
+  }
+
+  .name_input input {
+    width: 355px;
+  }
+
+  .message textarea {
+    width: 750px;
+  }
+}

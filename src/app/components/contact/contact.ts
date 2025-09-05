@@ -22,7 +22,7 @@ export class Contact {
   mailTest = false;
 
   post = {
-    endPoint: 'https://falko-katzer.de/sendMail.php',
+    endPoint: 'https://falko-katzer.de/sendMail.php', // hier den Pfad von der php Datei einfücgen!!!
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
