@@ -4,7 +4,7 @@
   font-family: Josefin Sans;
 }
 
-@import '../../mixins/mixins.scss';
+@import "../../mixins/mixins.scss";
 
 header {
   display: flex;
@@ -36,7 +36,6 @@ header {
   align-items: start;
   font-size: 16px;
   cursor: pointer;
-  
 }
 
 .logo {
@@ -54,9 +53,13 @@ header {
     height: 38px;
     transition: width 0.5s ease-out;
     &:hover {
-        width: 64px;
+      width: 64px;
     }
   }
+}
+
+.logo_mobile {
+  display: none;
 }
 
 .section_nav {
@@ -106,5 +109,62 @@ header {
     font-weight: 400;
     border: none;
     @include backgroundBlue;
+  }
+}
+
+.burger_menue {
+  display: none;
+}
+
+// Media Queries
+@include respond-to(m) {
+  .section_nav {
+    > a {
+      font-size: 20px;
+    }
+  }
+}
+
+@include respond-to(s) {
+  header {
+    @include backgroundDark;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo_mobile {
+    display: block;
+    @include centerCenter;
+    flex-direction: column;
+    > img {
+      width: 52px;
+      height: 38px;
+      transition: width 0.5s ease-out;
+      &:hover {
+        width: 64px;
+      }
+    }
+    > #salutation {
+      color: whitesmoke;
+      font-family: anta;
+    }
+    > #job_title {
+      color: #89bcd9;
+      font-family: Josefin Sans;
+    }
+  }
+
+  .section_nav {
+    display: none;
+  }
+
+  .language {
+    display: none;
+  }
+
+  .burger_menue {
+    display: block;
   }
 }

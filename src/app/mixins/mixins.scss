@@ -41,11 +41,10 @@
   width: 1440px;
 }
 
-// styles.scss oder responsive.scss
 
 $breakpoint-sm: 400px;
-$breakpoint-s: 600px;
-$breakpoint-m: 800px;
+$breakpoint-s: 540px;
+$breakpoint-m: 775px;
 $breakpoint-md: 900px;
 $breakpoint-lg: 1125px;
 $breakpoint-xl: 1250px;
@@ -59,11 +58,11 @@ $breakpoint-xl: 1250px;
     @media (max-width: $breakpoint-s) {
       @content;
     }
-  } @else if $breakpoint == md {
-    @media (max-width: $breakpoint-md) {
+  } @else if $breakpoint == m {
+    @media (max-width: $breakpoint-m) {
       @content;
     }
-  } @else if $breakpoint == m {
+  } @else if $breakpoint == md {
     @media (max-width: $breakpoint-md) {
       @content;
     }

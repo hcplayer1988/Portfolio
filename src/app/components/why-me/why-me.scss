@@ -102,3 +102,20 @@ h1 {
     width: 700px;
   }
 }
+
+@include respond-to(m) {
+  .informations {
+    flex-direction: column;
+    width: 500px;
+  }
+
+  .content {
+    width: 500px;
+  }
+
+  .contact_link {
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+  }
+}

@@ -263,3 +263,27 @@ h1 {
     padding-bottom: 12px;
   }
 }
+
+@include respond-to(s) {
+  .preview_img {
+    > img {
+      border-radius: 30px;
+      height: 250px;
+      width: 400px;
+    }
+  }
+
+  .first_projekt_title {
+    font-size: 20px;
+    font-weight: 500;
+    height: 56px;
+    width: 175px;
+  }
+
+  .second_projekt_title {
+    font-size: 20px;
+    font-weight: 500;
+    height: 56px;
+    width: 175px;
+  }
+}

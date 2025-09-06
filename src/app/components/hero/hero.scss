@@ -308,11 +308,32 @@ app-header {
   }
 }
 
+@include respond-to(m) {
+  .bg-ellipse {
+    height: 540px;
+    width: 540px;
+    padding-top: 64px;
+  }
+
+  .hero_img {
+    > img {
+      width: 450px;
+      height: 500px;
+    }
+  }
+}
+
 @include respond-to(s) {
   .bg-ellipse {
     height: 500px;
     width: 500px;
     padding-top: 64px;
   }
-  
+
+  .hero_img {
+    > img {
+      width: 400px;
+      height: 450px;
+    }
+  }
 }
