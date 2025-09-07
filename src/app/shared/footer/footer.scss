@@ -4,10 +4,12 @@
   font-family: Josefin Sans;
 }
 
+@import '../../mixins/mixins.scss';
+
 footer {
-  padding: 48px 0px 0px 0px;
+  padding: 48px 0px 48px 0px;
   background-color: #89bcd9;
-  height: 150px;
+
 }
 
 .content {
@@ -70,6 +72,67 @@ footer {
     &:hover {
       background-color: whitesmoke;
       border-radius: 100%;
+    }
+  }
+}
+
+.content_mobile {
+    display: none;
+}
+
+// Media Querie
+
+@include respond-to(s) {
+  .name a img {
+    width: 48px;
+    height: 34px;
+    transition: width 0.5s ease-out;
+    &:hover {
+      width: 56px;
+    }
+  }
+
+  .socialmedia {
+    gap: 4px;
+  }
+}
+
+@include respond-to(sm) {
+  .content {
+    display: none;
+  }
+
+  footer {
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .socialmedia {
+    gap: 24px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .content_mobile {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+
+  .legal_notice_mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    >a {
+      text-decoration: none;
+      color: #262e34;
     }
   }
 }
