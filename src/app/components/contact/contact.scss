@@ -194,6 +194,10 @@ h2 {
   display: none;
 }
 
+.uplink {
+    display: none;
+  }
+
 // Media Queries
 
 @include respond-to(lg) {
@@ -282,10 +286,68 @@ h2 {
     width: 100%;
     justify-content: center;
     align-items: center;
-    >span {
+    > span {
       width: 400px;
     }
   }
+}
 
+@include respond-to(sm) {
+  .right_box {
+    display: none;
+  }
 
+  h2 {
+    font-size: 40px;
+  }
+
+  .infos {
+    width: 280px;
+    gap: 12px;
+  }
+
+  .description {
+    width: 280px;
+  }
+
+  .contacts {
+    width: 280px;
+  }
+
+  .name_email_message {
+    justify-content: center;
+    width: 280px;
+  }
+
+  .privacy_policy {
+    width: 280px;
+    font-size: 14px;
+    gap: 4px;
+    justify-content: center;
+  }
+
+  .name_email {
+    width: 280px;
+  }
+
+  form {
+    width: 280px;
+  }
+
+  .mail_input input {
+    width: 280px;
+  }
+
+  .name_input input {
+    width: 280px;
+  }
+
+  .message textarea {
+    width: 280px;
+  }
+
+  .uplink {
+    display: block;
+    padding-top: 32px;
+  }
 }

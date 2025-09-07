@@ -325,15 +325,53 @@ app-header {
 
 @include respond-to(s) {
   .bg-ellipse {
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
     padding-top: 64px;
   }
 
   .hero_img {
     > img {
-      width: 400px;
-      height: 450px;
+      width: 350px;
+      height: 400px;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .up {
+    display: none;
+  }
+
+  .middle {
+    padding-bottom: 48px;
+  }
+
+  .right {
+    justify-content: center;
+    padding: 0;
+    height: 35%;
+  }
+
+  h1 {
+    font-size: 40px !important;
+    padding-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  .bg-ellipse {
+    height: 300px;
+    width: 300px;
+    padding-top: 64px;
+  }
+
+  .hero_img {
+    > img {
+      width: 250px;
+      height: 300px;
     }
   }
 }

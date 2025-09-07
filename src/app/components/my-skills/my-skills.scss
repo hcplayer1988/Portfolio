@@ -53,6 +53,10 @@ h1 {
   background-color: transparent;
 }
 
+.learning_mobile {
+  display: none;
+}
+
 .skillset {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -127,5 +131,75 @@ h1 {
 
   .skillset {
     width: 450px;
+  }
+}
+
+@include respond-to(sm) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .box {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skillset {
+    width: 280px;
+    height: 200px;
+    gap: 4px;
+    padding-bottom: 20px;
+  }
+
+  .learning {
+    display: none;
+  }
+
+  .learning_mobile {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px !important;
+  }
+
+  .headline_mobile {
+    @include blueFont;
+    font-family: Josefin Sans;
+    padding-bottom: 16px;
+    font-size: 18px;
+  }
+
+  .description_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include whiteFont;
+    font-family: Josefin Sans;
+    width: 100%;
+    > span {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  .icon_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 140px;
+    gap: 8px;
+    background-image: url(../../../../public/imgs/icons/ellipse_grey.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 20px;
+    background-color: transparent;
+    > img {
+      width: 36px;
+    }
   }
 }

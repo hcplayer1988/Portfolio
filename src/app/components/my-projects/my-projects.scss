@@ -287,3 +287,47 @@ h1 {
     width: 175px;
   }
 }
+
+@include respond-to(sm) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  .titles {
+    justify-content: center;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .info_header {
+    >span {
+      font-size: 14px;
+    }
+  }
+
+  .preview_img {
+    > img {
+      border-radius: 30px;
+      height: 180px;
+      width: 280px;
+    }
+  }
+
+  .first_projekt_title {
+    font-size: 16px;
+    font-weight: 500;
+    height: 56px;
+    width: 175px;
+  }
+
+  .second_projekt_title {
+    font-size: 16px;
+    font-weight: 500;
+    height: 56px;
+    width: 175px;
+  }
+}

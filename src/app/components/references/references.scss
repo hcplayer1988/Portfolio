@@ -114,7 +114,7 @@ main {
   }
 }
 
-@include respond-to(m) {ccccccccccccccccc
+@include respond-to(m) {
   .content {
     width: 500px;
   }
@@ -143,5 +143,38 @@ main {
 
   .references {
     width: 475px;
+  }
+}
+
+@include respond-to(s) {
+  .references {
+    width: 350px;
+  }
+
+  .content {
+    width: 350px;
+  }
+}
+
+@include respond-to(sm) {
+  .content {
+    width: 280px;
+    align-items: center;
+  }
+
+  .references {
+    width: 280px;
+  }
+
+  .headline_mobile {
+    text-align: center;
+  }
+
+  .blue_font {
+    font-size: 28px;
+  }
+
+  .white_font {
+    font-size: 16px;
   }
 }
