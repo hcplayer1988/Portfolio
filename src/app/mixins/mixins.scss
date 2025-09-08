@@ -98,3 +98,31 @@ $breakpoint-xl: 1250px;
   .
 }
 */
+
+$height-xs: 450px;
+$height-sm: 600px;
+$height-md: 800px;
+
+@mixin respond-to-height($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-height: $height-xs) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media (max-height: $height-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-height: $height-md) {
+      @content;
+    }
+  } 
+}
+
+
+/*
+@include respond-to-height(sm) {
+  
+}
+
+*/

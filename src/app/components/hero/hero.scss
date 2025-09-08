@@ -129,7 +129,7 @@ app-header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-bottom: 256px;
+  padding-bottom: 240px;
 }
 .name {
   > h1 {
@@ -204,20 +204,37 @@ app-header {
 
   .hero_img {
     > img {
-      width: 550px;
-      height: 600px;
-      padding-bottom: 60px;
+      width: 400px;
+      height: 450px;
+      padding-bottom: 0;
       padding-left: 24px;
     }
   }
 
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .right {
+    padding-bottom: 24px;
+  }
+
+  .bg {
+    height: 500px;
+    width: 350px;
+  }
+
   .bg-ellipse {
-    height: 550px;
+    height: 450px;
     width: 400px;
+    
   }
 
   .middle {
-    padding-bottom: 128px;
+    padding-bottom: 112px;
   }
 
   .up {
@@ -253,6 +270,16 @@ app-header {
   .right {
     align-items: center;
     text-align: center;
+  }
+
+  .hero_img {
+    > img {
+      width: 430px;
+      height: 530px;
+      padding-left: 12px;
+      padding-bottom: 40px;
+      padding-left: 24px;
+    }
   }
 
   .socialmedia {
@@ -336,9 +363,23 @@ app-header {
       height: 400px;
     }
   }
+
+  .logo {
+    display: none;
+  }
 }
 
 @include respond-to(sm) {
+
+
+  .all {
+    padding: 0;
+    margin: 0;
+  }
+
+  .left {
+    width: 280px;
+  }
   .up {
     display: none;
   }
@@ -362,6 +403,10 @@ app-header {
     font-size: 20px !important;
   }
 
+  .bg {
+    width: 300px;
+  }
+
   .bg-ellipse {
     height: 300px;
     width: 300px;
@@ -374,4 +419,44 @@ app-header {
       height: 300px;
     }
   }
+}
+
+// Media Querie height
+
+@include respond-to-height(xs) {
+  .bg-ellipse {
+    height: 280px;
+    width: 280px;
+    padding-top: 64px;
+  }
+
+  .hero_img {
+    > img {
+      width: 220px;
+      height: 270px;
+    }
+  }
+
+  .right {
+    padding-bottom: 12px;
+  }
+
+  .middle {
+    padding-bottom: 40px;
+  }
+
+  .up {
+    display: flex;
+    justify-content: center;
+    >.block {
+      display: none;
+    }
+    >.socialmedia {
+      display: none;
+    }
+  }
+
+  h1 {
+      font-family: 40px !important;
+    }
 }
