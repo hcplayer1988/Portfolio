@@ -395,7 +395,7 @@ app-header {
   }
 
   h1 {
-    font-size: 40px !important;
+    font-size: 48px !important;
     padding-bottom: 8px;
   }
 
@@ -423,7 +423,7 @@ app-header {
 
 // Media Querie height
 
-@include respond-to-height(xs) {
+@include respond-to-height(sm) {
   .bg-ellipse {
     height: 280px;
     width: 280px;
@@ -443,6 +443,7 @@ app-header {
 
   .middle {
     padding-bottom: 40px;
+    text-align: center;
   }
 
   .up {
@@ -456,7 +457,32 @@ app-header {
     }
   }
 
+  .logo {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) {
+  .all {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .middle {
+    padding-bottom: 12px;
+  }
+
   h1 {
-      font-family: 40px !important;
-    }
+    font-size: 48px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
 }

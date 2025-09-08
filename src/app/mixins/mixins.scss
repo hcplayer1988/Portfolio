@@ -99,8 +99,8 @@ $breakpoint-xl: 1250px;
 }
 */
 
-$height-xs: 450px;
-$height-sm: 600px;
+$height-xs: 400px;
+$height-sm: 450px;
 $height-md: 800px;
 
 @mixin respond-to-height($breakpoint) {
