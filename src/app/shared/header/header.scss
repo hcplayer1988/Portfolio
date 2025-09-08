@@ -66,7 +66,6 @@ header {
   justify-content: space-around;
   width: 60%;
   > a {
-    width: 100;
     font-size: 26px;
     font-weight: 500;
     text-decoration: none;
@@ -164,6 +163,54 @@ header {
   }
 
   .burger_menue {
+    position: fixed; // statt default
+    top: 20px;
+    right: 32px;
+    z-index: 10001; // höher als das Overlay
     display: block;
+    cursor: pointer;
+  }
+
+  .overlay_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    > nav {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      a {
+        font-size: 28px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          color: #89bcd9;
+        }
+      }
+    }
+  }
+
+  .language_overlay {
+    margin-top: 40px;
+    display: flex;
+    gap: 12px;
+    > button {
+      background: none;
+      border: none;
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        color: #89bcd9;
+      }
+    }
   }
 }

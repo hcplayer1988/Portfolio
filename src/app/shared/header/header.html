@@ -24,8 +24,27 @@
       <button id="de">DE</button>
       <button id="en">EN</button>
     </div>
-    <div class="burger_menue">
-      <img src="./imgs/icons/burger_menue.png" alt="">
+    <div class="burger_menue" (click)="toggleMenu()">
+      <img
+        [src]="
+          isMenuOpen
+            ? './imgs/icons/burger_menue.png'
+            : './imgs/icons/burger_menue.png'
+        "
+        alt="Menu Icon"
+      />
+    </div>
+    <div class="overlay_menu" *ngIf="isMenuOpen">
+      <nav>
+        <a href="#wy_me">Why me</a>
+        <a href="#my_skills">Skills</a>
+        <a href="#my_projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="language_overlay">
+        <button id="de">DE</button>
+        <button id="en">EN</button>
+      </div>
     </div>
   </div>
 </header>

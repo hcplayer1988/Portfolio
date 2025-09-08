@@ -46,6 +46,7 @@ app-header {
   bottom: 0;
   height: 750px;
   width: 600px;
+  z-index: 0;
   background-image: url("../../../../public/imgs/icons/large_ellipse_desktop.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -155,6 +156,11 @@ app-header {
   width: 100%;
   position: relative;
   bottom: 0;
+  >img {
+    &:hover {
+    background-color: #e8f5ff;
+    }
+  }
 }
 
 // Media Queries
