@@ -1,14 +1,20 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })
 export class Contact {
+
+  privacyAccepted: boolean = false;
+
+
+
 
   http = inject(HttpClient);
 
@@ -22,7 +28,7 @@ export class Contact {
   mailTest = false;
 
   post = {
-    endPoint: 'https://falko-katzer.de/sendMail.php', // hier den Pfad von der php Datei einfücgen!!!
+    endPoint: 'https://falko-katzer.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -33,7 +39,7 @@ export class Contact {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid) { //  && !this.mailTest and th else if part only for testing can be deleted later!! Set the Mailttest to false!!!
+    if (ngForm.submitted && ngForm.form.valid && this.privacyAccepted) { 
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -43,7 +49,7 @@ export class Contact {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'), //console info can be deleted later
+          complete: () => console.info('send post complete'), 
         });
     // } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 

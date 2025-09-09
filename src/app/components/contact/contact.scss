@@ -194,8 +194,14 @@ h2 {
 }
 
 .uplink {
-    display: none;
-  }
+  display: none;
+}
+
+.active-button {
+  border: solid 1px #89bbd9 !important;
+  color: #89bbd9 !important;
+  cursor: pointer;
+}
 
 // Media Queries
 

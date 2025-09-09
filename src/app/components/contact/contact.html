@@ -1,85 +1,131 @@
 <main id="contact">
-    <div class="content">
-        <div class="head">
-            <div class="center_box">
-                <h2>Contact me</h2>
-            </div>
-            <div class="right_box">
-                <a href="#">
-                    <img src="./imgs/icons/arrow_up.png" alt="">
-                </a>
-            </div>
+  <div class="content">
+    <div class="head">
+      <div class="center_box">
+        <h2>Contact me</h2>
+      </div>
+      <div class="right_box">
+        <a href="#">
+          <img src="./imgs/icons/arrow_up.png" alt="" />
+        </a>
+      </div>
+    </div>
+    <div class="infos">
+      <div class="description">
+        <span>
+          I'm excited about interesting job offers or project inquiries —
+          especially in the field of web development. With creativity,
+          reliability, and a keen eye for detail, I bring real value to any
+          team. Let’s build something great together!
+        </span>
+      </div>
+      <div class="contacts">
+        <div class="contact_infos">
+          <img src="./imgs/icons/email_white.png" alt="" /> E-mail:
+          mustermail@gmail.com
         </div>
-        <div class="infos">
-            <div class="description">
-                <span>
-                    I'm excited about interesting job offers 
-                    or project inquiries — especially in the
-                    field of web development. With creativity, 
-                    reliability, and a keen eye for detail, I 
-                    bring real value to any team. Let’s build 
-                    something great together!
-                </span>
-            </div>
-            <div class="contacts">
-                <div class="contact_infos">
-                    <img src="./imgs/icons/email_white.png" alt=""> E-mail: mustermail@gmail.com
-                </div>
-                <div class="contact_infos">
-                    <img src="./imgs/icons/phone_white.png" alt=""> Tel: 0174 2562430
-                </div>
-            </div>
+        <div class="contact_infos">
+          <img src="./imgs/icons/phone_white.png" alt="" /> Tel: 0174 2562430
         </div>
-        <div class="work_together">
-            <span>
-                Let us work together!
-            </span>
-        </div>
-<div class="name_email_message">
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm = "ngForm">
+      </div>
+    </div>
+    <div class="work_together">
+      <span> Let us work together! </span>
+    </div>
+    <div class="name_email_message">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="name_email">
-            <div class="name_input">
-                <label for="name">Name</label>
-                <input #name="ngModel" minlength="4" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.." required>
-                @if (!name.valid && name.touched) {
-                    <span>Please enter a Name</span>
-                }
-            </div>
+          <div class="name_input">
+            <label for="name">Name</label>
+            <input
+              #name="ngModel"
+              minlength="4"
+              [(ngModel)]="contactData.name"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+              required
+            />
+            @if (!name.valid && name.touched) {
+            <span>Please enter a Name</span>
+            }
+          </div>
 
-            <div class="mail_input">
-                <label for="email">Your E-Mail</label>
-                <input #email="ngModel" minlength="4" [(ngModel)]="contactData.email" type="text" id="email" name="email" placeholder="Your E-Mail.." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                @if (!email.valid && email.touched) {
-                    <span>Please enter a E-Mail</span>
-                }
-            </div>
+          <div class="mail_input">
+            <label for="email">Your E-Mail</label>
+            <input
+              #email="ngModel"
+              minlength="4"
+              [(ngModel)]="contactData.email"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your E-Mail.."
+              required
+              pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            />
+            @if (!email.valid && email.touched) {
+            <span>Please enter a E-Mail</span>
+            }
+          </div>
         </div>
 
         <div class="message">
-            <label for="subject">Your Message</label>
-            <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
-            @if (!message.valid && message.touched) {
-                <span>Please enter a message</span>
-            }
+          <label for="subject">Your Message</label>
+          <textarea
+            #message="ngModel"
+            minlength="4"
+            [(ngModel)]="contactData.message"
+            id="message"
+            name="message"
+            placeholder="Write something.."
+            style="height: 200px"
+            required
+          ></textarea>
+          @if (!message.valid && message.touched) {
+          <span>Please enter a message</span>
+          }
         </div>
-        <div class="privacy_policy">
-            <img src="./imgs/icons/ellipse_empty.png" alt="">
-            <span>
-                I've rread the privacy policy and agree to the 
-                processsing of my data as outlined.
-            </span>
+        <div
+          class="privacy_policy"
+          (click)="privacyAccepted = !privacyAccepted"
+        >
+          <input
+            type="checkbox"
+            id="privacy"
+            [(ngModel)]="privacyAccepted"
+            name="privacyAccepted"
+            hidden
+          />
+          <img
+            [src]="
+              privacyAccepted
+                ? './imgs/icons/ellipse_checked.png'
+                : './imgs/icons/ellipse_empty.png'
+            "
+            alt="Privacy Checkbox"
+          />
+          <span>
+            I've read the privacy policy and agree to the processing of my data
+            as outlined.
+          </span>
         </div>
+
         <div class="send">
-            <input type="submit" value="Send">
+          <input
+            type="submit"
+            value="Send"
+            [disabled]="!privacyAccepted"
+            [ngClass]="{ 'active-button': privacyAccepted }"
+          />
         </div>
-    </form>
-</div>
+      </form>
+    </div>
     <div class="uplink">
-        <a href="#">
-            <img src="./imgs/icons/arrow_up.png" alt="">
-        </a>
+      <a href="#">
+        <img src="./imgs/icons/arrow_up.png" alt="" />
+      </a>
     </div>
-    </div>
+  </div>
 </main>
-
-
