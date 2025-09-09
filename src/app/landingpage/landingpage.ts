@@ -14,5 +14,10 @@ import { Contact } from "../components/contact/contact";
   styleUrl: './landingpage.scss'
 })
 export class Landingpage {
+  menuOpen = false;
+
+  onMenuToggle(isOpen: boolean): void {
+    this.menuOpen = isOpen;
+  }
 
 }

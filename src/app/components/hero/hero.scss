@@ -14,7 +14,6 @@ main {
 
 .all {
   box-sizing: border-box;
-  // @include w1440;
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 20px;
@@ -84,6 +83,10 @@ app-header {
   align-items: center;
   gap: 200px;
   padding-top: 160px;
+}
+
+.sticky-header {
+  z-index: 1001;
 }
 
 .block {
@@ -156,9 +159,9 @@ app-header {
   width: 100%;
   position: relative;
   bottom: 0;
-  >img {
+  > img {
     &:hover {
-    background-color: #e8f5ff;
+      background-color: #e8f5ff;
     }
   }
 }
@@ -214,7 +217,14 @@ app-header {
       height: 450px;
       padding-bottom: 0;
       padding-left: 24px;
+      transition: opacity 0.3s ease;
+      opacity: 1;
     }
+  }
+
+  .hero_img.hidden {
+    opacity: 0;
+    pointer-events: none;
   }
 
   .left {
@@ -236,7 +246,6 @@ app-header {
   .bg-ellipse {
     height: 450px;
     width: 400px;
-    
   }
 
   .middle {
@@ -376,8 +385,6 @@ app-header {
 }
 
 @include respond-to(sm) {
-
-
   .all {
     padding: 0;
     margin: 0;
@@ -455,10 +462,10 @@ app-header {
   .up {
     display: flex;
     justify-content: center;
-    >.block {
+    > .block {
       display: none;
     }
-    >.socialmedia {
+    > .socialmedia {
       display: none;
     }
   }

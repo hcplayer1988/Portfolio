@@ -3,7 +3,7 @@
         <div class="left">
             <div class="bg">
                 <div class="bg-ellipse"></div>
-                <div class="hero_img">
+                <div class="hero_img"  [ngClass]="{ 'hidden': isMenuOpen }">
                     <img src="./imgs/img/hero_placholder_img.png" alt="">
                 </div>
             </div>
@@ -37,6 +37,6 @@
             </div>
         </div>
     </div>
-    <app-header class="sticky-header"></app-header>
+    <app-header (menuToggled)="onMenuToggle($event)" class="sticky-header"></app-header>
 </main>
 

@@ -36,10 +36,10 @@
     </div>
     <div class="overlay_menu" *ngIf="isMenuOpen">
       <nav>
-        <a href="#wy_me">Why me</a>
-        <a href="#my_skills">Skills</a>
-        <a href="#my_projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#wy_me" (click)="closeMenu()">Why me</a>
+        <a href="#my_skills" (click)="closeMenu()">Skills</a>
+        <a href="#my_projects" (click)="closeMenu()">Projects</a>
+        <a href="#contact" (click)="closeMenu()">Contact</a>
       </nav>
       <div class="language_overlay">
         <button id="de">DE</button>
