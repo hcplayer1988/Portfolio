@@ -20,7 +20,7 @@ export class MyProjects {
         { name: 'JavaScript', icon: './imgs/icons/javaScript.png' }
       ],
       preview: './imgs/img/polllo_loco.png',
-      liveLink: 'https://el-pollo-loco.example.com',
+      liveLink: 'https://el-pollo-loco.falko-katzer.de/',
       githubLink: 'https://github.com/hcplayer1988/El-Pollo-Loco'
     },
     join: {

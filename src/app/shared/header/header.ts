@@ -10,10 +10,14 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
+
 export class Header {
+  currentLang = 'en';
+
   constructor(private languageService: LanguageService) {}
 
   changeLanguage(lang: string): void {
+    this.currentLang = lang;
     this.languageService.useLanguage(lang);
   }
 

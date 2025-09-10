@@ -80,35 +80,26 @@ header {
 }
 
 .language {
-  width: 20%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 8px;
   > button {
-    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    @include backgroundBlue;
     width: 40px;
     height: 32px;
     cursor: pointer;
+    padding: 0;
+
+    &.active {
+      background-image: url("../../../../public/imgs/icons/Ellipse\ 24.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
     &:hover {
       @include whiteFont;
     }
-  }
-  > #en {
-    font-size: 18px;
-    font-weight: 400;
-    border: none;
-    @include backgroundBlue;
-    background-image: url("../../../../public/imgs/icons/Ellipse\ 24.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  > #de {
-    font-size: 18px;
-    font-weight: 400;
-    border: none;
-    @include backgroundBlue;
   }
 }
 
@@ -189,7 +180,7 @@ header {
     background-image: url("../../../../public/imgs/icons/large_ellipse_desktop.png");
     background-size: auto 300px;
     background-repeat: no-repeat;
-    background-position: center 38vh;
+    background-position: center;
     > nav {
       display: flex;
       flex-direction: column;
@@ -209,17 +200,23 @@ header {
   .language_overlay {
     margin-top: 40px;
     display: flex;
+    align-items: center;
     gap: 12px;
     > button {
       background: none;
       border: none;
-      font-size: 18px;
+      font-size: 20px;
       color: white;
       cursor: pointer;
       &:hover {
         color: whitesmoke;
       }
+      &.active {
+        background-image: url("../../../../public/imgs/icons/Ellipse\ 24.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
   }
 }
-
