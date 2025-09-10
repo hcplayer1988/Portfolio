@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-projects',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './my-projects.html',
   styleUrl: './my-projects.scss'
 })

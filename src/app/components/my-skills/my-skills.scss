@@ -57,6 +57,15 @@ h1 {
   display: none;
 }
 
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    >img {
+      width: 32px;
+    }
+}
+
 .skillset {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -155,7 +164,7 @@ h1 {
   .learning {
     display: none;
   }
-
+  
   .learning_mobile {
     display: block;
     display: flex;

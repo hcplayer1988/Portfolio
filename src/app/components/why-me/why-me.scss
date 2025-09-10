@@ -74,10 +74,6 @@ h1 {
 // Media Queries
 
 @include respond-to(lg) {
-  h1 {
-    margin-top: 0px;
-  }
-
   .informations {
     width: 700px;
     gap: 6px;

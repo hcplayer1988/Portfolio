@@ -1,0 +1,121 @@
+{
+  "header": {
+    "whyMe": "Why me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+
+  "whyMe": {
+    "h1": "Why Me",
+    "locationBlue": "I am",
+    "locationWhite": "located in Bautzen",
+    "span": "As a web developer, I bring more than just technical expertise—I bring integrity, precision and a passion for digital solutions. I create websites that don’t just work, but truly inspire. My goal is to deliver projects that users intuitively understand and that help businesses thrive in the digital space.",
+    "button": "Let's talk"
+  },
+
+  "mySkills": {
+    "h1": "My Skills",
+    "headline": "I am currently learning",
+    "headlineMobile": "I am currently learning",
+    "description": "Web development is evolving rapidly – and I’m passionate about staying one step ahead. With up-to-date expertise and a keen eye for trends, I create modern, future-proof solutions.",
+    "descriptionMobile": "Web development is evolving rapidly — and I love staying ahead of the curve. Whether it's new tools, emerging trends, or best practices, I continuously expand my knowledge to deliver modern and future-proof solutions to my clients."
+  },
+
+  "myProjects": {
+    "h1": "My Projects",
+    "projects": {
+      "polloLoco": {
+        "about": {
+          "h2": "About the project",
+          "duration": "Duration: 3 Weeks",
+          "infoTxt": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe collect coins and bottles to fight against the chickens."
+        },
+        "workProcess": {
+          "h2": "My work process",
+          "infoTxt": "Built with vanilla JavaScript, focusing on modular architecture, sprite animation, and collision detection."
+        },
+        "whatILearned": {
+          "h2": "What I Learned",
+          "infoTxt": "Strengthened my understanding of OOP, canvas rendering, and responsive game design."
+        }
+      },
+
+      "join": {
+        "about": {
+          "h2": "About the project",
+          "duration": "Duration: 5 Weeks",
+          "infoTxt": "A task management app inspired by Trello. Built with HTML, CSS, and JavaScript, featuring drag-and-drop and local storage."
+        },
+        "workProcess": {
+          "h2": "My work process",
+          "infoTxt": "Implemented modular JS components, dynamic DOM manipulation, and user-friendly UI transitions."
+        },
+        "whatILearned": {
+          "h2": "What I Learned",
+          "infoTxt": "Improved my skills in event delegation, state management, and accessibility best practices."
+        }
+      }
+    },
+    "technologies": "Technologies",
+    "test": "Live Test"
+  },
+
+  "references": {
+    "headline": "Need a teamplayer? Here's what my colleagues said about me.",
+    "headlineMobile": {
+      "blue": "Need a teamplayer?",
+      "white": "Here's what my colleagues said about me.",
+      "project": "Project:"
+    },
+    "list": {
+      "sahraMueller": {
+        "project": "Join",
+        "text": "Falko is a reliable and friendly person. Works in a structured way and writes clear code. I recommend her as a colleague."
+      },
+      "jonasBecker": {
+        "project": "Join",
+        "text": "Working with Falko was a pleasure. He’s focused, detail-oriented, and a great communicator."
+      },
+      "leaSchmidt": {
+        "project": "Join",
+        "text": "Falko brings great energy to the team and always delivers on time. His code is clean and well-documented."
+      },
+      "tomRichter": {
+        "project": "Join",
+        "text": "Falko is a true team player. He’s proactive and always ready to help others improve."
+      },
+      "annaWeber": {
+        "project": "Join",
+        "text": "His frontend skills are top-notch. Falko has a great eye for design and usability."
+      }
+    }
+  },
+
+  "contact": {
+    "headline": "Contact me",
+    "description": "I'm excited about interesting job offers or project inquiries — especially in the field of web development. With creativity, reliability, and a keen eye for detail, I bring real value to any team. Let’s build something great together!",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Tel",
+    "phoneNumber": "Ask me",
+    "workTogether": "Let us work together!",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name..",
+      "nameError": "Please enter a Name",
+      "emailLabel": "Your E-Mail",
+      "emailPlaceholder": "Your E-Mail..",
+      "emailError": "Please enter a E-Mail",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Write something..",
+      "messageError": "Please enter a message",
+      "privacyText": "I've read the privacy policy and agree to the processing of my data as outlined.",
+      "submit": "Send"
+    },
+    "uplinkAlt": "Back to top"
+  },
+
+  "footer": {
+    "legalNotice": "Imprint / Privacy Policy"
+  }
+}

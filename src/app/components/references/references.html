@@ -1,12 +1,12 @@
 <main id="references_section">
   <div class="content">
     <div class="headline">
-      <span>Need a teamplayer? Here's what my colleagues said about me.</span>
+      <span>{{ 'references.headline' | translate }}</span>
     </div>
 
     <div class="headline_mobile">
-      <span class="blue_font">Need a teamplayer?</span>
-      <span class="white_font">Here's what my colleagues said about me.</span>
+      <span class="blue_font">{{ 'references.headlineMobile.blue' | translate }}</span>
+      <span class="white_font">{{ 'references.headlineMobile.white' | translate }}</span>
     </div>
 
     <div class="references" >
@@ -17,10 +17,10 @@
               <div class="name">{{ ref.name }}</div>
               <div class="project">
                 <span>Project: </span>
-                <span class="project_name">{{ ref.project }}</span>
+                <span class="project_name">{{ 'references.list.' + ref.key + '.project' | translate }}</span>
               </div>
               <div class="reference_text">
-                {{ ref.text }}
+                {{ 'references.list.' + ref.key + '.text' | translate }}
               </div>
               <div class="social_link">
                 <a [href]="ref.link" target="_blank">LinkedIn Profile</a>

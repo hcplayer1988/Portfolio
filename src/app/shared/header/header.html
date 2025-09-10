@@ -15,14 +15,14 @@
       </div>
     </div>
     <div class="section_nav">
-      <a href="#wy_me">Why me</a>
-      <a href="#my_skills">Skills</a>
-      <a href="#my_projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#wy_me">{{ "header.whyMe" | translate }}</a>
+      <a href="#my_skills">{{ "header.skills" | translate }}</a>
+      <a href="#my_projects">{{ "header.projects" | translate }}</a>
+      <a href="#contact">{{ "header.contact" | translate }}</a>
     </div>
     <div class="language">
-      <button id="de">DE</button>
-      <button id="en">EN</button>
+      <button (click)="changeLanguage('de')" id="de">DE</button>
+      <button (click)="changeLanguage('en')" id="en">EN</button>
     </div>
     <div class="burger_menue" (click)="toggleMenu()">
       <img
@@ -36,14 +36,14 @@
     </div>
     <div class="overlay_menu" *ngIf="isMenuOpen">
       <nav>
-        <a href="#wy_me" (click)="closeMenu()">Why me</a>
-        <a href="#my_skills" (click)="closeMenu()">Skills</a>
-        <a href="#my_projects" (click)="closeMenu()">Projects</a>
-        <a href="#contact" (click)="closeMenu()">Contact</a>
+        <a href="#wy_me" (click)="closeMenu()">{{ "header.whyMe" | translate }}</a>
+        <a href="#my_skills" (click)="closeMenu()">{{ "header.skills" | translate }}</a>
+        <a href="#my_projects" (click)="closeMenu()">{{ "header.projects" | translate }}</a>
+        <a href="#contact" (click)="closeMenu()">{{ "header.contact" | translate }}</a>
       </nav>
       <div class="language_overlay">
-        <button id="de">DE</button>
-        <button id="en">EN</button>
+        <button (click)="changeLanguage('de')" id="de">DE</button>
+        <button (click)="changeLanguage('en')" id="en">EN</button>
       </div>
     </div>
   </div>

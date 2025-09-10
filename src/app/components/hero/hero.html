@@ -1,48 +1,50 @@
 <main>
-    <div class="all">
-        <div class="left">
-            <div class="bg">
-                <div class="bg-ellipse"></div>
-                <div class="hero_img"  [ngClass]="{ 'hidden': isMenuOpen }">
-                    <img src="./imgs/img/hero_placholder_img.png" alt="">
-                </div>
-            </div>
+  <div class="all">
+    <div class="left">
+      <div class="bg">
+        <div class="bg-ellipse"></div>
+        <div class="hero_img" [ngClass]="{ hidden: isMenuOpen }">
+          <img src="./imgs/img/hero_placholder_img.png" alt="" />
         </div>
-        <div class="right">
-            <div class="middle">
-                <div class="up">
-                <div class="block"></div>
-                <div class="logo">
-                    <img src="./imgs/icons/logo_icon.png" alt=""/>
-                    <span id="salutation">F.Katzer</span>
-                    <span id="job_title">developer</span>
-                </div>
-                <div class="socialmedia">
-                    <a href="#contact">
-                        <img src="./imgs/icons/email_button.png" alt="">
-                    </a>
-                    <a href="https://github.com/hcplayer1988" target="_blank">
-                        <img src="./imgs/icons/github_button.png" alt="">
-                    </a>
-                    <a href="https://www.linkedin.com/in/falko-katzer/" target="_blank">
-                        <img src="./imgs/icons/linkedin_button.png" alt="">
-                    </a>
-                </div>
-            </div>
-                <div class="name">
-                    <h1>Falko Katzer</h1>
-                </div>
-                <div class="job">
-                    <h2>FRONTEND DEVELOPER</h2>
-                </div>
-            </div>
-            <div class="arrow_down">
-                <a href="#wy_me">
-                    <img src="./imgs/icons/arrow_down.png" alt="">
-                </a>
-            </div>
-        </div>
+      </div>
     </div>
-    <app-header (menuToggled)="onMenuToggle($event)" class="sticky-header"></app-header>
+    <div class="right">
+      <div class="middle">
+        <div class="up">
+          <div class="block"></div>
+          <div class="logo">
+            <img src="./imgs/icons/logo_icon.png" alt="" />
+            <span id="salutation">F.Katzer</span>
+            <span id="job_title">developer</span>
+          </div>
+          <div class="socialmedia">
+            <a href="#contact">
+              <img src="./imgs/icons/email_button.png" alt="" />
+            </a>
+            <a href="https://github.com/hcplayer1988" target="_blank">
+              <img src="./imgs/icons/github_button.png" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/falko-katzer/" target="_blank">
+              <img src="./imgs/icons/linkedin_button.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="name">
+          <h1>Falko Katzer</h1>
+        </div>
+        <div class="job">
+          <h2>FRONTEND DEVELOPER</h2>
+        </div>
+      </div>
+      <div class="arrow_down">
+        <a href="#wy_me">
+          <img src="./imgs/icons/arrow_down.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <app-header
+    (menuToggled)="onMenuToggle($event)"
+    class="sticky-header"
+  ></app-header>
 </main>
-

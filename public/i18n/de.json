@@ -1,0 +1,121 @@
+{
+  "header": {
+    "whyMe": "Warum ich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "whyMe": {
+    "h1": "Warum ich",
+    "locationBlue": "Ich",
+    "locationWhite": "lebe in Bautzen",
+    "span": "Als Webentwickler bringe ich mehr als nur technisches Fachwissen mit – ich bringe Integrität, Präzision und eine Leidenschaft für digitale Lösungen mit. Ich erstelle Websites, die nicht nur funktionieren, sondern wirklich inspirieren. Mein Ziel ist es, Projekte zu entwickeln, die Nutzer intuitiv verstehen und Unternehmen helfen, im digitalen Raum erfolgreich zu sein.",
+    "button": "Sag Hallo"
+  },
+
+  "mySkills": {
+    "h1": "Meine Fähigkeiten",
+    "headline": "Ich lerne gerade",
+    "headlineMobile": "Ich lerne gerade",
+    "description": "Die Webentwicklung verändert sich rasant – und ich bin leidenschaftlich dabei, stets einen Schritt voraus zu sein. Mit aktuellem Know-how und Blick für Trends entwickle ich moderne, zukunftssichere Lösungen.",
+    "descriptionMobile": "Die Webentwicklung entwickelt sich rasant – und ich liebe es, immer einen Schritt voraus zu sein. Indem ich mein Wissen über neue Tools, Trends und Best Practices kontinuierlich erweitere, liefere ich moderne, zukunftssichere Lösungen."
+  },
+
+  "myProjects": {
+    "h1": "Meine Projekte",
+    "projects": {
+      "polloLoco": {
+        "about": {
+          "h2": "Über das Projekt",
+          "duration": "Dauer: 3 Wochen",
+          "infoTxt": "Ein einfaches Jump-and-Run-Spiel auf objektorientierter Basis. Hilf Pepe, Münzen und Flaschen zu sammeln, um gegen die Hühner zu kämpfen."
+        },
+        "workProcess": {
+          "h2": "Mein Arbeitsprozess",
+          "infoTxt": "Erstellt mit JavaScript, mit Fokus auf modularer Architektur, Sprite-Animation und Kollisions­erkennung."
+        },
+        "whatILearned": {
+          "h2": "Was habe ich gelernt",
+          "infoTxt": "Ich habe mein Verständnis für objektorientierte Programmierung, Canvas-Rendering und responsives Game-Design vertieft."
+        }
+      },
+
+      "join": {
+        "about": {
+          "h2": "Über das Projekt",
+          "duration": "Dauer: 5 Wochen",
+          "infoTxt": "Eine Aufgabenverwaltungs-App, inspiriert von Trello. Entwickelt mit HTML, CSS und JavaScript – inklusive Drag-and-Drop-Funktion und lokaler Speicherung."
+        },
+        "workProcess": {
+          "h2": "Mein Arbeitsprozess",
+          "infoTxt": "Modulare JavaScript-Komponenten implementiert, dynamische DOM-Manipulation umgesetzt und benutzerfreundliche UI-Übergänge gestaltet."
+        },
+        "whatILearned": {
+          "h2": "Was habe ich gelernt",
+          "infoTxt": "Ich habe meine Fähigkeiten in Event-Delegation, Zustandsverwaltung und Best Practices für Barrierefreiheit weiter verbessert."
+        }
+      }
+    },
+    "technologies": "Technologien",
+    "test": "Testen"
+  },
+
+    "references": {
+    "headline": "Brauchen Sie einen Teamplayer? Hier ist, was meine Kolleginnen und Kollegen über mich gesagt haben.",
+    "headlineMobile": {
+      "blue": "Brauchen Sie einen Teamplayer?",
+      "white": "Hier ist, was meine Kolleginnen und Kollegen über mich gesagt haben.",
+      "project": "Projekt:"
+    },
+    "list": {
+      "sahraMueller": {
+        "project": "Join",
+        "text": "Falko ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt klaren, sauberen Code. Ich empfehle ihn als Kollegen weiter."
+      },
+      "jonasBecker": {
+        "project": "Join",
+        "text": "Die Zusammenarbeit mit Falko war eine Freude. Er ist fokussiert, detailorientiert und kommuniziert klar und effektiv."
+      },
+      "leaSchmidt": {
+        "project": "Join",
+        "text": "Falko bringt großartige Energie ins Team und liefert stets pünktlich. Sein Code ist sauber und gut dokumentiert."
+      },
+      "tomRichter": {
+        "project": "Join",
+        "text": "Falko ist ein echter Teamplayer. Er handelt vorausschauend und ist stets bereit, anderen bei ihrer Weiterentwicklung zu helfen."
+      },
+      "annaWeber": {
+        "project": "Join",
+        "text": "Seine Frontend-Fähigkeiten sind erstklassig. Falko hat ein ausgezeichnetes Gespür für Design und Benutzerfreundlichkeit."
+      }
+    }
+  },
+
+  "contact": {
+    "headline": "Kontaktiere mich",
+    "description": "Ich freue mich über spannende Jobangebote oder Projektanfragen – besonders im Bereich Webentwicklung. Mit Kreativität, Zuverlässigkeit und einem geschulten Blick fürs Detail bringe ich echten Mehrwert in jedes Team. Lass uns gemeinsam Großartiges schaffen!",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Tel",
+    "phoneNumber": "Auf Anfrage",
+    "workTogether": "Lass uns zusammenarbeiten!",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Dein Name..",
+      "nameError": "Bitte gib einen Namen ein",
+      "emailLabel": "Deine E-Mail",
+      "emailPlaceholder": "Deine E-Mail..",
+      "emailError": "Bitte gib eine gültige E-Mail ein",
+      "messageLabel": "Deine Nachricht",
+      "messagePlaceholder": "Schreibe etwas..",
+      "messageError": "Bitte gib eine Nachricht ein",
+      "privacyText": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
+      "submit": "Senden"
+    },
+    "uplinkAlt": "Zurück nach oben"
+  },
+
+  "footer": {
+    "legalNotice": "Impressum / Datenschutzerklärung"
+  }
+
+}

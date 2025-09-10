@@ -1,6 +1,6 @@
 <main id="my_projects">
   <div class="content">
-    <h1>My Projects</h1>
+    <h1>{{ "myProjects.h1" | translate }}</h1>
 
     <div class="titles">
       <div
@@ -30,15 +30,11 @@
           </div>
           <div class="info_content">
             <div class="info_header">
-              <h2>About the project</h2>
-              <span>Duration: 3 Weeks</span>
+              <h2>{{ "myProjects.projects.polloLoco.about.h2" | translate }}</h2>
+              <span>{{ "myProjects.projects.polloLoco.about.duration" | translate }}</span>
             </div>
             <div class="info_txt">
-              <span>
-                A simple Jump-and-Run game based on an object-oriented approach.
-                Help Pepe collect coins and bottles to fight against the
-                chickens.
-              </span>
+              <span>{{ "myProjects.projects.polloLoco.about.infoTxt" | translate }}</span>
             </div>
           </div>
         </div>
@@ -49,13 +45,10 @@
           </div>
           <div class="info_content">
             <div class="info_header">
-              <h2>Work Process</h2>
+              <h2>{{ "myProjects.projects.polloLoco.workProcess.h2" | translate }}</h2>
             </div>
             <div class="info_txt">
-              <span>
-                Built with vanilla JavaScript, focusing on modular architecture,
-                sprite animation, and collision detection.
-              </span>
+              <span>{{ "myProjects.projects.polloLoco.workProcess.infoTxt" | translate }}</span>
             </div>
           </div>
         </div>
@@ -66,13 +59,10 @@
           </div>
           <div class="info_content">
             <div class="info_header">
-              <h2>What I Learned</h2>
+              <h2>{{ "myProjects.projects.polloLoco.whatILearned.h2" | translate }}</h2>
             </div>
             <div class="info_txt">
-              <span>
-                Strengthened my understanding of OOP, canvas rendering, and
-                responsive game design.
-              </span>
+              <span>{{ "myProjects.projects.polloLoco.whatILearned.infoTxt" | translate }}</span>
             </div>
           </div>
         </div>
@@ -85,14 +75,11 @@
           </div>
           <div class="info_content">
             <div class="info_header">
-              <h2>About the project</h2>
-              <span>Duration: 5 Weeks</span>
+              <h2>{{ "myProjects.projects.join.about.h2" | translate }}</h2>
+              <span>{{ "myProjects.projects.join.about.duration" | translate }}</span>
             </div>
             <div class="info_txt">
-              <span>
-                A task management app inspired by Trello. Built with HTML, CSS,
-                and JavaScript, featuring drag-and-drop and local storage.
-              </span>
+              <span>{{ "myProjects.projects.join.about.infoTxt" | translate }}</span>
             </div>
           </div>
         </div>
@@ -103,13 +90,10 @@
           </div>
           <div class="info_content">
             <div class="info_header">
-              <h2>Work Process</h2>
+              <h2>{{ "myProjects.projects.join.workProcess.h2" | translate }}</h2>
             </div>
             <div class="info_txt">
-              <span>
-                Implemented modular JS components, dynamic DOM manipulation, and
-                user-friendly UI transitions.
-              </span>
+              <span>{{ "myProjects.projects.join.workProcess.infoTxt" | translate }}</span>
             </div>
           </div>
         </div>
@@ -120,13 +104,10 @@
           </div>
           <div class="info_content">
             <div class="info_header">
-              <h2>What I Learned</h2>
+              <h2>{{ "myProjects.projects.join.whatILearned.h2" | translate }}</h2>
             </div>
             <div class="info_txt">
-              <span>
-                Improved my skills in event delegation, state management, and
-                accessibility best practices.
-              </span>
+              <span>{{ "myProjects.projects.join.whatILearned.infoTxt" | translate }}</span>
             </div>
           </div>
         </div>
@@ -134,7 +115,7 @@
 
       <div class="preview">
         <div class="technologies">
-          <div class="headline"><span>Technologies</span></div>
+          <div class="headline"><span>{{ "myProjects.technologies" | translate }}</span></div>
           <div class="technologie_img">
             <img
               *ngFor="let tech of projects[activeProject].technologies"
@@ -150,7 +131,7 @@
 
         <div class="buttons">
           <a [href]="projects[activeProject].liveLink" target="_blank">
-            <button>Live Test</button>
+            <button>{{ "myProjects.test" | translate }}</button>
           </a>
           <a [href]="projects[activeProject].githubLink" target="_blank">
             <button>GitHub</button>
