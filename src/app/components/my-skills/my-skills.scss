@@ -51,7 +51,13 @@ h1 {
   background-position: center;
   gap: 18px;
   background-color: transparent;
+  transform-origin: center center;
+  // transition: transform 0.5s ease-in-out;
 }
+
+// .learning:hover {
+//   transform: rotate(-20deg);
+// }
 
 .learning_mobile {
   display: none;
