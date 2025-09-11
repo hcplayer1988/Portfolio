@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { Header } from "../../shared/header/header";
 import { CommonModule } from '@angular/common';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
@@ -11,9 +11,18 @@ import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 })
 export class Hero {
   isMenuOpen = false;
+  isHeaderFixed = false;
 
   onMenuToggle(open: boolean): void {
     this.isMenuOpen = open;
   }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Höhe der Hero-Section ermitteln
+    const heroHeight = document.querySelector('.all')?.clientHeight || 0;
+    this.isHeaderFixed = window.scrollY >= heroHeight;
+  }
+
 
 }

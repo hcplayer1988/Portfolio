@@ -46,5 +46,6 @@
   <app-header
     (menuToggled)="onMenuToggle($event)"
     class="sticky-header"
+    [class.fixed]="isHeaderFixed"
   ></app-header>
 </main>
