@@ -117,5 +117,28 @@
 
   "footer": {
     "legalNotice": "Imprint / Privacy Policy"
+  },
+
+  "imprint": {
+    "title": "Imprint",
+    "serviceProvider": "Service Provider",
+    "contactOptions": "Contact Options",
+    "onlinePresences": "Social Media and Other Online Presences",
+    "disclaimer": "Liability and Intellectual Property Notices"
+  },
+
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "preamble": "Preamble",
+    "tableOfContents": "Table of Contents",
+    "responsible": "Controller",
+    "processingOverview": "Overview of Processing",
+    "legalBasis": "Legal Bases",
+    "securityMeasures": "Security Measures",
+    "dataTransfer": "Transfer of Personal Data",
+    "hosting": "Provision of the Online Offer and Web Hosting",
+    "cookies": "Use of Cookies",
+    "contactManagement": "Contact and Inquiry Management",
+    "socialMedia": "Presence in Social Networks (Social Media)"
   }
 }

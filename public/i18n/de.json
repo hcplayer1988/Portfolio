@@ -116,6 +116,28 @@
 
   "footer": {
     "legalNotice": "Impressum / Datenschutzerklärung"
-  }
+  },
 
+  "imprint": {
+    "title": "Impressum",
+    "serviceProvider": "Diensteanbieter",
+    "contactOptions": "Kontaktmöglichkeiten",
+    "onlinePresences": "Social Media und andere Onlinepräsenzen",
+    "disclaimer": "Haftungs- und Schutzrechtshinweise"
+  },
+
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "preamble": "Präambel",
+    "tableOfContents": "Inhaltsübersicht",
+    "responsible": "Verantwortlicher",
+    "processingOverview": "Übersicht der Verarbeitungen",
+    "legalBasis": "Maßgebliche Rechtsgrundlagen",
+    "securityMeasures": "Sicherheitsmaßnahmen",
+    "dataTransfer": "Übermittlung von personenbezogenen Daten",
+    "hosting": "Bereitstellung des Onlineangebots und Webhosting",
+    "cookies": "Einsatz von Cookies",
+    "contactManagement": "Kontakt- und Anfrageverwaltung",
+    "socialMedia": "Präsenzen in sozialen Netzwerken (Social Media)"
+  }
 }

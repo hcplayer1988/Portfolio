@@ -1,10 +1,10 @@
 <main class="main_body">
   <app-header class="header"></app-header>
   <div class="content">
-    <h1>Imprint</h1>
+    <h1>{{ "imprint.title" | translate }}</h1>
     <div class="all">
       <div class="service_provider">
-        <h2 id="m46">Diensteanbieter</h2>
+        <h2 id="m46">{{ "imprint.serviceProvider" | translate }}</h2>
         <p>Falko Katzer</p>
         <p>Hintere Rreichenstraße 15</p>
         <p>02625 Bautzen</p>
@@ -12,7 +12,7 @@
       </div>
 
       <div class="contaact_options">
-        <h2 id="m56">Kontaktmöglichkeiten</h2>
+        <h2 id="m56">{{ "imprint.contactOptions" | translate }}</h2>
         <p>
           E-Mail-Adresse:
           <a href="mailto:mail-contact@falko-katzer.de"
@@ -22,7 +22,7 @@
       </div>
 
       <div class="online_presences">
-        <h2 id="m172">Social Media und andere Onlinepräsenzen</h2>
+        <h2 id="m172">{{ "imprint.onlinePresences" | translate }}</h2>
         <p>
           Dieses Impressum gilt auch für die folgenden Social-Media-Präsenzen
           und Onlineprofile:
@@ -35,7 +35,7 @@
       </div>
 
       <div class="disclaimer">
-        <h2 id="m65">Haftungs- und Schutzrechtshinweise</h2>
+        <h2 id="m65">{{ "imprint.disclaimer" | translate }}</h2>
         <p>
           Haftungsausschluss: Die Inhalte dieses Onlineangebotes wurden
           sorgfältig und nach unserem aktuellen Kenntnisstand erstellt, dienen
@@ -76,33 +76,35 @@
       </p>
     </div>
 
-    <h1>Datenschutzerklärung</h1>
-    <h2 id="m4158">Präambel</h2>
+    <h1>{{ "privacyPolicy.title" | translate }}</h1>
+    <h2 id="m4158">{{ "privacyPolicy.preamble" | translate }}</h2>
     <p>
       Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären,
       welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als
       "Daten" bezeichnet) wir zu welchen Zwecken und in welchem Umfang im Rahmen
       der Bereitstellung unserer Applikation verarbeiten.
     </p>
-    <p>Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
+    <p style="padding-bottom: 8px">
+      Die verwendeten Begriffe sind nicht geschlechtsspezifisch.
+    </p>
 
-    <p>Stand: 9. September 2025</p>
-    <h2>Inhaltsübersicht</h2>
+    <p class="padding">Stand: 9. September 2025</p>
+    <h2>{{ "privacyPolicy.tableOfContents" | translate }}t</h2>
     <ul class="index">
-      <li>Präambel</li>
-      <li>Verantwortlicher</li>
-      <li>Übersicht der Verarbeitungen</li>
-      <li>>Maßgebliche Rechtsgrundlagen</li>
-      <li>Sicherheitsmaßnahmen</li>
-      <li>Übermittlung von personenbezogenen Daten</li>
-      <li>Bereitstellung des Onlineangebots und Webhosting</li>
-      <li>Einsatz von Cookies</li>
-      <li>Kontakt- und Anfrageverwaltung</li>
-      <li>Präsenzen in sozialen Netzwerken (Social Media)</li>
+      <li>{{ "privacyPolicy.preamble" | translate }}</li>
+      <li>{{ "privacyPolicy.responsible" | translate }}</li>
+      <li>{{ "privacyPolicy.processingOverview" | translate }}</li>
+      <li>{{ "privacyPolicy.legalBasis" | translate }}</li>
+      <li>{{ "privacyPolicy.securityMeasures" | translate }}</li>
+      <li>{{ "privacyPolicy.dataTransfer" | translate }}</li>
+      <li>{{ "privacyPolicy.hosting" | translate }}</li>
+      <li>{{ "privacyPolicy.cookies" | translate }}</li>
+      <li>{{ "privacyPolicy.contactManagement" | translate }}</li>
+      <li>{{ "privacyPolicy.socialMedia" | translate }}</li>
     </ul>
 
     <div class="responsible_person">
-      <h2 id="m3">Verantwortlicher</h2>
+      <h2 id="m3">{{ 'privacyPolicy.responsible' | translate }}</h2>
       <p>
         Falko, Katzer<br />Hintere Reichenstraße 15<br />02625, Bautzen,
         Deutschland
@@ -116,7 +118,7 @@
     </div>
 
     <div class="overview">
-      <h2 id="mOverview">Übersicht der Verarbeitungen</h2>
+      <h2 id="mOverview">{{ 'privacyPolicy.processingOverview' | translate }}</h2>
       <p>
         Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und
         die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen
@@ -151,7 +153,7 @@
     </div>
 
     <div class="legal_basis">
-      <h2 id="m2427">Maßgebliche Rechtsgrundlagen</h2>
+      <h2 id="m2427">{{ 'privacyPolicy.legalBasis' | translate }}</h2>
       <p>
         <strong>Maßgebliche Rechtsgrundlagen nach der DSGVO: </strong>Im
         Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO,
@@ -218,7 +220,7 @@
     </div>
 
     <div class="security">
-      <h2 id="m27">Sicherheitsmaßnahmen</h2>
+      <h2 id="m27">{{ 'privacyPolicy.securityMeasures' | translate }}</h2>
       <p>
         Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter
         Berücksichtigung des Stands der Technik, der Implementierungskosten und
@@ -262,7 +264,7 @@
     </div>
 
     <div class="data">
-      <h2 id="m25">Übermittlung von personenbezogenen Daten</h2>
+      <h2 id="m25">{{ 'privacyPolicy.dataTransfer' | translate }}</h2>
       <p>
         Im Rahmen unserer Verarbeitung von personenbezogenen Daten kommt es vor,
         dass diese an andere Stellen, Unternehmen, rechtlich selbstständige
@@ -277,7 +279,7 @@
     </div>
 
     <div class="hosting">
-      <h2 id="m225">Bereitstellung des Onlineangebots und Webhosting</h2>
+      <h2 id="m225">{{ 'privacyPolicy.hosting' | translate }}</h2>
       <p>
         Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste zur
         Verfügung stellen zu können. Zu diesem Zweck verarbeiten wir die
@@ -349,7 +351,7 @@
     </div>
 
     <div class="cookies">
-      <h2 id="m134">Einsatz von Cookies</h2>
+      <h2 id="m134">{{ 'privacyPolicy.cookies' | translate }}</h2>
       <p>
         Unter dem Begriff „Cookies" werden Funktionen, die Informationen auf
         Endgeräten der Nutzer speichern und aus ihnen auslesen, verstanden.
@@ -471,7 +473,7 @@
     </div>
 
     <div class="contact">
-      <h2 id="m182">Kontakt- und Anfrageverwaltung</h2>
+      <h2 id="m182">{{ 'privacyPolicy.contactManagement' | translate }}</h2>
       <p>
         Bei der Kontaktaufnahme mit uns (z. B. per Post, Kontaktformular,
         E-Mail, Telefon oder via soziale Medien) sowie im Rahmen bestehender
@@ -537,7 +539,7 @@
     </div>
 
     <div class="social_media">
-      <h2 id="m136">Präsenzen in sozialen Netzwerken (Social Media)</h2>
+      <h2 id="m136">{{ 'privacyPolicy.socialMedia' | translate }}</h2>
       <p>
         Wir unterhalten Onlinepräsenzen innerhalb sozialer Netzwerke und
         verarbeiten in diesem Rahmen Nutzerdaten, um mit den dort aktiven
