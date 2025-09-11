@@ -110,7 +110,8 @@
       "messagePlaceholder": "Write something..",
       "messageError": "Please enter a message",
       "privacyText": "I've read the privacy policy and agree to the processing of my data as outlined.",
-      "submit": "Send"
+      "submit": "Send",
+      "successMessage": "Message sent!"
     },
     "uplinkAlt": "Back to top"
   },

@@ -26,7 +26,8 @@
         </div>
         <div class="contact_infos">
           <img src="./imgs/icons/phone_white.png" alt="" />
-          {{ "contact.phoneLabel" | translate }}: {{ "contact.phoneNumber" | translate }}
+          {{ "contact.phoneLabel" | translate }}:
+          {{ "contact.phoneNumber" | translate }}
         </div>
       </div>
     </div>
@@ -126,6 +127,13 @@
         </div>
       </form>
     </div>
+
+    @if (emailSent) {
+    <div class="feedback-message">
+      {{ "contact.form.successMessage" | translate }}
+    </div>
+    }
+
     <div class="uplink">
       <a href="#">
         <img

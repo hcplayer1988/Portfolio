@@ -109,7 +109,8 @@
       "messagePlaceholder": "Schreibe etwas..",
       "messageError": "Bitte gib eine Nachricht ein",
       "privacyText": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
-      "submit": "Senden"
+      "submit": "Senden",
+      "successMessage": "Nachricht gesendet!"
     },
     "uplinkAlt": "Zurück nach oben"
   },

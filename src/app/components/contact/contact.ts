@@ -8,23 +8,19 @@ import { TranslateModule } from '@ngx-translate/core';
   selector: 'app-contact',
   imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './contact.html',
-  styleUrl: './contact.scss'
+  styleUrl: './contact.scss',
 })
 export class Contact {
-
   privacyAccepted: boolean = false;
-
-
-
+  emailSent: boolean = false;
 
   http = inject(HttpClient);
 
   contactData = {
-    name: "",
-    email: "",
-    message: "",
-
-  }
+    name: '',
+    email: '',
+    message: '',
+  };
 
   mailTest = false;
 
@@ -40,23 +36,25 @@ export class Contact {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && this.privacyAccepted) { 
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+    if (ngForm.submitted && ngForm.form.valid && this.privacyAccepted) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.emailSent = true;
             ngForm.resetForm();
+            this.privacyAccepted = false;
+            ngForm.resetForm();
+            setTimeout(() => {
+              this.emailSent = false;
+            }, 5000);
+
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'), 
+          complete: () => console.info('send post complete'),
         });
-    // } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-    //   ngForm.resetForm();
-    // }
+    }
   }
-}
-
 }

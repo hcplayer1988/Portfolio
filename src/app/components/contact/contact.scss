@@ -203,6 +203,29 @@ h2 {
   cursor: pointer;
 }
 
+.feedback-message {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  font-family: Josefin Sans;
+  font-weight: 700;
+  color: whitesmoke;
+  border: 2px solid #89bbd9;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 // Media Queries
 
 @include respond-to(lg) {
