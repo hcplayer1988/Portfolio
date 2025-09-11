@@ -1,11 +1,11 @@
 import { Component, HostListener, inject } from '@angular/core';
 import { Header } from "../../shared/header/header";
 import { CommonModule } from '@angular/common';
-import {TranslatePipe, TranslateService} from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
-  imports: [Header, CommonModule,],
+  imports: [Header, CommonModule, TranslateModule],
   templateUrl: './hero.html',
   styleUrl: './hero.scss'
 })

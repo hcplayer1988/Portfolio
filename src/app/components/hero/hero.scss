@@ -4,19 +4,16 @@
 }
 
 .title {
-    width: 300px;
-    height: 50px;
-    background-color: aliceblue;
+  width: 300px;
+  height: 50px;
+  background-color: aliceblue;
 }
 
 .test {
-    height: 100px;
-    width: 300px;
-    background-color: white;
+  height: 100px;
+  width: 300px;
+  background-color: white;
 }
-
-
-
 
 @import "../../mixins/mixins.scss";
 
@@ -105,7 +102,6 @@ app-header {
   position: relative;
   width: 100%;
   transition: all 0.3s ease;
-
 }
 
 .sticky-header.fixed {
@@ -149,8 +145,15 @@ app-header {
   > img {
     height: 32px;
     width: 32px;
+  }
+}
+
+.socialmedia a {
+  >img {
     &:hover {
       cursor: pointer;
+      background-color: whitesmoke;
+      border-radius: 100%;
     }
   }
 }
@@ -186,9 +189,13 @@ app-header {
   width: 100%;
   position: relative;
   bottom: 0;
+}
+
+.arrow_down a {
   > img {
     &:hover {
-      background-color: #e8f5ff;
+      background-color: #3f4346;
+      border-radius: 30px;
     }
   }
 }

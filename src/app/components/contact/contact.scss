@@ -38,6 +38,16 @@
 .right_box {
   grid-column: 2;
   justify-self: end;
+  > img {
+    &:hover {
+      background-color: green;
+    }
+  }
+}
+
+.right_box a img:hover {
+  background-color: #3f4346;
+  border-radius: 30px;
 }
 
 h2 {
@@ -187,6 +197,10 @@ h2 {
   width: 112px;
   color: #888c8a;
   font-size: 18px;
+    &:hover {
+    background-color: #3f4346;
+    border-radius: 30px;
+  }
 }
 
 .work_together {

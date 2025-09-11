@@ -1,4 +1,8 @@
 {
+  "hero": {
+    "jobTitle": "FRONTEND DEVELOPER"
+  },
+
   "header": {
     "whyMe": "Why me",
     "skills": "Skills",
