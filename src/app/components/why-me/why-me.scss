@@ -15,7 +15,12 @@ h1 {
   font-size: 60px;
   margin-top: 64px;
   margin-bottom: 64px;
+  scroll-margin-top: 165px;
 }
+
+// #why_me {
+//   scroll-margin-top: 200px;
+// }
 
 .content {
   @include centerCenter;

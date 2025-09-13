@@ -321,6 +321,15 @@ app-header {
     text-align: center;
   }
 
+  .bg-ellipse {
+    height: 550px;
+    width: 550px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 64px;
+  }
+
   .hero_img {
     > img {
       width: 430px;
@@ -362,15 +371,6 @@ app-header {
     > h2 {
       font-size: 24px;
     }
-  }
-
-  .bg-ellipse {
-    height: 600px;
-    width: 600px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 64px;
   }
 
   .left {

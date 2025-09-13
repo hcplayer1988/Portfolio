@@ -112,7 +112,9 @@
       "messageLabel": "Deine Nachricht",
       "messagePlaceholder": "Schreibe etwas..",
       "messageError": "Bitte gib eine Nachricht ein",
-      "privacyText": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
+      "privacyTextOne": "Ich habe die ",
+      "privacyLink": "Datenschutzerklärung",
+      "privacyTextTwo": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
       "submit": "Senden",
       "successMessage": "Nachricht gesendet!"
     },
@@ -120,7 +122,8 @@
   },
 
   "footer": {
-    "legalNotice": "Impressum / Datenschutzerklärung"
+    "imprint": "Impressum",
+    "privacyPolicy": "Datenschutzerklärung"
   },
 
   "imprint": {

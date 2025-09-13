@@ -113,7 +113,9 @@
             alt="Privacy Checkbox"
           />
           <span>
-            {{ "contact.form.privacyText" | translate }}
+            {{ "contact.form.privacyTextOne" | translate }} 
+              <a id="blue" [routerLink]="['/imprint']">{{ "contact.form.privacyLink" | translate }}</a>
+            {{ "contact.form.privacyTextTwo" | translate }}
           </span>
         </div>
 

@@ -8,6 +8,7 @@
 
 main {
   @include backgroundDark;
+  scroll-margin-top: 200px;
 }
 
 .content {
@@ -289,6 +290,10 @@ h1 {
 }
 
 @include respond-to(sm) {
+  main {
+  scroll-margin-top: 170px;
+}
+
   h1 {
     font-size: 40px;
   }
@@ -304,7 +309,7 @@ h1 {
   }
 
   .info_header {
-    >span {
+    > span {
       font-size: 14px;
     }
   }

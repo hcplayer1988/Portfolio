@@ -113,7 +113,9 @@
       "messageLabel": "Your Message",
       "messagePlaceholder": "Write something..",
       "messageError": "Please enter a message",
-      "privacyText": "I've read the privacy policy and agree to the processing of my data as outlined.",
+      "privacyTextOne": "I've read the ",
+      "privacyLink": "privacy policy",
+      "privacyTextTwo": "and agree to the processing of my data as outlined.",
       "submit": "Send",
       "successMessage": "Message sent!"
     },
@@ -121,7 +123,8 @@
   },
 
   "footer": {
-    "legalNotice": "Imprint / Privacy Policy"
+    "imprint": "Imprint",
+    "privacyPolicy": "Privacy Policy"
   },
 
   "imprint": {

@@ -27,6 +27,21 @@
               </div>
             </div>
           </div>
+          <div class="reference_bg" *ngFor="let ref of references">
+            <div class="reference">
+              <div class="name">{{ ref.name }}</div>
+              <div class="project">
+                <span>Project: </span>
+                <span class="project_name">{{ 'references.list.' + ref.key + '.project' | translate }}</span>
+              </div>
+              <div class="reference_text">
+                {{ 'references.list.' + ref.key + '.text' | translate }}
+              </div>
+              <div class="social_link">
+                <a [href]="ref.link" target="_blank">LinkedIn Profile</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

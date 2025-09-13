@@ -6,6 +6,10 @@
 
 @import "../../mixins/mixins.scss";
 
+main {
+    scroll-margin-top: 165px;
+}
+
 .content {
   width: 100%;
   max-width: 1440px;
@@ -183,6 +187,10 @@ h2 {
       border-radius: 30px;
     }
   }
+}
+
+#blue {
+  color: #89bbd9;
 }
 
 .send {
