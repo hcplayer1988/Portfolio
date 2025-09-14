@@ -1,8 +1,12 @@
 <footer>
   <div class="content">
     <div class="legal_notice">
-      <a [routerLink]="['/imprint']"  fragment="top">{{ "footer.imprint" | translate }}</a>
-      <a [routerLink]="['/imprint']">{{ "footer.privacyPolicy" | translate }}</a>
+      <a [routerLink]="['/imprint']" fragment="top">{{
+        "footer.imprint" | translate
+      }}</a>
+      <a [routerLink]="['/imprint']">{{
+        "footer.privacyPolicy" | translate
+      }}</a>
       <span>© Falko Katzer 2025</span>
     </div>
     <div class="name">
@@ -44,7 +48,14 @@
       </a>
     </div>
     <div class="legal_notice_mobile">
-      <a [routerLink]="['/imprint']">{{ "footer.legalNotice" | translate }}</a>
+      <div class="legal_links">
+        <a [routerLink]="['/imprint']" fragment="top">{{
+          "footer.imprint" | translate
+        }}</a>
+        <a [routerLink]="['/imprint']">{{
+          "footer.privacyPolicy" | translate
+        }}</a>
+      </div>
       <span>© Falko Katzer 2025</span>
     </div>
   </div>

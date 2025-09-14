@@ -26,6 +26,7 @@ main {
   color: #89bbd9;
   font-size: 32px;
   margin-bottom: 64px;
+  text-align: center;
 }
 
 .headline_mobile {
@@ -178,6 +179,9 @@ main {
 }
 
 @include respond-to(s) {
+  .content {
+    width: 490px;
+  }
   .references {
     width: 350px;
   }

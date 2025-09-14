@@ -4,12 +4,11 @@
   font-family: Josefin Sans;
 }
 
-@import '../../mixins/mixins.scss';
+@import "../../mixins/mixins.scss";
 
 footer {
   padding: 48px 0px 48px 0px;
   background-color: #89bcd9;
-
 }
 
 .content {
@@ -77,7 +76,7 @@ footer {
 }
 
 .content_mobile {
-    display: none;
+  display: none;
 }
 
 // Media Querie
@@ -126,13 +125,26 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 12px;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    >a {
+    > a {
       text-decoration: none;
       color: #262e34;
+    }
+
+    .legal_links {
+      display: flex;
+      flex-direction: column;
+      > a {
+        text-decoration: none;
+        color: #262e34;
+        &:hover {
+          color: whitesmoke;
+        }
+      }
     }
   }
 }
