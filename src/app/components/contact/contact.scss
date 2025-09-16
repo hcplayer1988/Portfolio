@@ -323,8 +323,16 @@ h2 {
   .message {
     align-items: center;
     > label {
-      width: 280px;
+      width: 100%;
     }
+  }
+
+  .mail_input input {
+    width: 450px;
+  }
+
+  .name_input input {
+    width: 450px;
   }
 
   .message textarea {

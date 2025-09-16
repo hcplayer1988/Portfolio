@@ -53,8 +53,11 @@ h1 {
   background-position: center;
   gap: 18px;
   background-color: transparent;
-  transform-origin: center center;
-  // transition: transform 0.5s ease-in-out;
+  //transition: 1s ease;
+  &:hover {
+    background-image: url(../../../../public/imgs/icons/large_Ellipse_dark_180.png);
+    transition: 0,5s ease;
+  }
 }
 
 // .learning:hover {
