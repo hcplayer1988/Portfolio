@@ -67,11 +67,13 @@ header {
   display: flex;
   justify-content: space-around;
   width: 60%;
-  > a {
+  > button {
     font-size: 26px;
     font-weight: 500;
     text-decoration: none;
     color: #262e34;
+    border: none;
+    @include backgroundBlue;
 
     &:hover {
       @include whiteFont;
@@ -184,12 +186,15 @@ header {
     > nav {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 16px;
 
-      a {
+      button {
         font-size: 28px;
         color: black;
         text-decoration: none;
+        border: none;
+        border-radius: 20px;
+        @include backgroundBlue;
         &:hover {
           color: whitesmoke;
         }
@@ -198,7 +203,7 @@ header {
   }
 
   .language_overlay {
-    margin-top: 40px;
+    margin-top: 32px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -206,7 +211,7 @@ header {
       background: none;
       border: none;
       font-size: 20px;
-      color: white;
+      color: black;
       cursor: pointer;
       &:hover {
         color: whitesmoke;
