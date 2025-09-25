@@ -2,6 +2,7 @@ import { Component, signal, inject } from '@angular/core';
 import { RouterOutlet, Router, NavigationStart } from '@angular/router';
 import { Footer } from "./shared/footer/footer";
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
+// import AOS from 'aos';
 
 
 @Component({
@@ -17,6 +18,7 @@ export class App {
         window.scrollTo({ top: 0 });
       }
     });
+    // AOS.init();
   }
 
 

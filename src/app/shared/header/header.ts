@@ -10,7 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
-
 export class Header {
   currentLang = 'en';
 
@@ -33,5 +32,12 @@ export class Header {
   closeMenu(): void {
     this.isMenuOpen = false;
     this.menuToggled.emit(false);
+  }
+
+  scrollTo(id: string): void {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
