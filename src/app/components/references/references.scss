@@ -39,7 +39,6 @@ main {
   width: max-content;
 }
 
-
 .scrolling_content {
   display: flex;
   width: max-content;
@@ -103,8 +102,12 @@ main {
 }
 
 .reference_text {
-  padding-bottom: 12px;
+  margin-bottom: 16px;
   text-align: center;
+  height: 130px;
+  width: 230px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 // Media Queries
@@ -127,6 +130,15 @@ main {
     text-align: center;
   }
 
+  .reference_text {
+    margin-bottom: 16px;
+    text-align: center;
+    height: 100px;
+    width: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
   .name {
     font-size: 20px;
   }
@@ -139,6 +151,15 @@ main {
 @include respond-to(md) {
   .content {
     width: 765px;
+  }
+
+  .reference_text {
+    margin-bottom: 16px;
+    text-align: center;
+    height: 100px;
+    width: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
@@ -155,13 +176,13 @@ main {
     display: none;
   }
 
-.headline_mobile {
-  display: block;
-  padding-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .headline_mobile {
+    display: block;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .blue_font {
     font-family: Anta;
@@ -176,6 +197,15 @@ main {
   .references {
     width: 475px;
   }
+
+  .reference_text {
+    margin-bottom: 16px;
+    text-align: center;
+    height: 100px;
+    width: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }
 
 @include respond-to(s) {
@@ -184,6 +214,15 @@ main {
   }
   .references {
     width: 350px;
+  }
+
+  .reference_text {
+    margin-bottom: 16px;
+    text-align: center;
+    height: 100px;
+    width: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .scrolling_content {
@@ -213,4 +252,3 @@ main {
     font-size: 16px;
   }
 }
-

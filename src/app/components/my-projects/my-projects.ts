@@ -30,8 +30,8 @@ export class MyProjects {
         { name: 'Angular', icon: './imgs/icons/angular.png' }
       ],
       preview: './imgs/img/join.png',
-      liveLink: 'https://join-app.example.com',
-      githubLink: 'https://github.com/yourname/join'
+      liveLink: 'http://join.falko-katzer.de/',
+      githubLink: 'https://github.com/hcplayer1988/Join'
     }
   };
 

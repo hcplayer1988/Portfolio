@@ -49,15 +49,15 @@
         "about": {
           "h2": "About the project",
           "duration": "Duration: 5 Weeks",
-          "infoTxt": "A task management app inspired by Trello. Built with HTML, CSS, and JavaScript, featuring drag-and-drop and local storage."
+          "infoTxt": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
         },
         "workProcess": {
           "h2": "My work process",
-          "infoTxt": "Implemented modular JS components, dynamic DOM manipulation, and user-friendly UI transitions."
+          "infoTxt": "To ensure clean and maintainable code, I structured the project modularly from the very beginning. The application is divided into well-organized, reusable components, each with a clearly defined responsibility. This structured approach not only enables efficient further development but also facilitates smooth collaboration within the team."
         },
         "whatILearned": {
-          "h2": "What I Learned",
-          "infoTxt": "Improved my skills in event delegation, state management, and accessibility best practices."
+          "h2": "My group work experience",
+          "infoTxt": "Our team consisted of five people. In each sprint, tasks were distributed so that everyone could work independently on specific components. I was responsible for creating and editing contacts, implementing the application's start animation, and developing the display and editing functionality for tasks. Whenever time allowed, I also contributed to components developed by my teammates — through code reviews, collaborative problem-solving, or minor optimizations. The collaboration was open, solution-oriented, and characterized by mutual support."
         }
       }
     },

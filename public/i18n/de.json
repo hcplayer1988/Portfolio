@@ -9,6 +9,7 @@
     "projects": "Projekte",
     "contact": "Kontakt"
   },
+
   "whyMe": {
     "h1": "Warum ich",
     "locationBlue": "Ich",
@@ -48,15 +49,15 @@
         "about": {
           "h2": "Über das Projekt",
           "duration": "Dauer: 5 Wochen",
-          "infoTxt": "Eine Aufgabenverwaltungs-App, inspiriert von Trello. Entwickelt mit HTML, CSS und JavaScript – inklusive Drag-and-Drop-Funktion und lokaler Speicherung."
+          "infoTxt": "Aufgabenmanager inspiriert vom Kanban-System. Aufgaben erstellen und organisieren mit Drag-and-Drop-Funktion, Benutzer und Kategorien zuweisen."
         },
         "workProcess": {
           "h2": "Mein Arbeitsprozess",
-          "infoTxt": "Modulare JavaScript-Komponenten implementiert, dynamische DOM-Manipulation umgesetzt und benutzerfreundliche UI-Übergänge gestaltet."
+          "infoTxt": "Um sauberen und wartbaren Code zu gewährleisten, habe ich das Projekt von Anfang an modular aufgebaut. Die Anwendung ist in klar strukturierte, wiederverwendbare Komponenten unterteilt, die jeweils eine definierte Verantwortung tragen. Dieser strukturierte Ansatz ermöglicht nicht nur eine effiziente Weiterentwicklung, sondern erleichtert auch die Zusammenarbeit im Team."
         },
         "whatILearned": {
-          "h2": "Was habe ich gelernt",
-          "infoTxt": "Ich habe meine Fähigkeiten in Event-Delegation, Zustandsverwaltung und Best Practices für Barrierefreiheit weiter verbessert."
+          "h2": "Meine Gruppenerfahrung",
+          "infoTxt": "Unser Team bestand aus 5 Personen. In jedem Sprint wurden die Aufgaben so verteilt, dass jeder eigenverantwortlich an bestimmten Komponenten arbeiten konnte. Ich war zuständig für die Erstellung und Bearbeitung von Kontakten, die Startanimation der Anwendung sowie die Anzeige- und Editierfunktionen für Aufgaben. Wenn es meine Zeit erlaubte, habe ich auch aktiv an Komponenten meiner Teammitglieder mitgewirkt – etwa durch Code-Reviews, gemeinsame Problemlösungen oder kleinere Optimierungen. Die Zusammenarbeit war offen, lösungsorientiert und von gegenseitiger Unterstützung geprägt."
         }
       }
     },
@@ -64,7 +65,7 @@
     "test": "Testen"
   },
 
-    "references": {
+  "references": {
     "headline": "Brauchen Sie einen Teamplayer? Hier ist, was meine Kolleg*innen über mich gesagt haben.",
     "headlineMobile": {
       "blue": "Brauchen Sie einen Teamplayer?",
@@ -88,59 +89,60 @@
         "project": "Join",
         "text": "Falko K. hat sich stets als äußerst engagiertes und verantwortungsbewusstes Teammitglied erwiesen. Er zeigte großes Interesse daran, aktiv an der Lösungsfindung teilzuhaben und brachte sich stets konstruktiv mit eigenen Vorschlägen ein. Seine Zuverlässigkeit in Bezug auf Absprachen und Pünktlichkeit war vorbildlich, und er bewies ein ausgezeichnetes Verständnis für die Aufgaben. Bei Unklarheiten fragte er stets proaktiv nach, was eine reibungslose Zusammenarbeit garantierte und Missverständnisse effektiv vermied."
       }
-  },
-
-  "contact": {
-    "headline": "Kontaktiere mich",
-    "description": "Ich freue mich über spannende Jobangebote oder Projektanfragen – besonders im Bereich Webentwicklung. Mit Kreativität, Zuverlässigkeit und einem geschulten Blick fürs Detail bringe ich echten Mehrwert in jedes Team. Lass uns gemeinsam Großartiges schaffen!",
-    "emailLabel": "E-Mail",
-    "phoneLabel": "Tel",
-    "phoneNumber": "Auf Anfrage",
-    "workTogether": "Lass uns zusammenarbeiten!",
-    "form": {
-      "nameLabel": "Name",
-      "namePlaceholder": "Dein Name..",
-      "nameError": "Bitte gib einen Namen ein",
-      "emailLabel": "Deine E-Mail",
-      "emailPlaceholder": "Deine E-Mail..",
-      "emailError": "Bitte gib eine gültige E-Mail ein",
-      "messageLabel": "Deine Nachricht",
-      "messagePlaceholder": "Schreibe etwas..",
-      "messageError": "Bitte gib eine Nachricht ein",
-      "privacyTextOne": "Ich habe die ",
-      "privacyLink": "Datenschutzerklärung",
-      "privacyTextTwo": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
-      "submit": "Senden",
-      "successMessage": "Nachricht gesendet!"
     },
-    "uplinkAlt": "Zurück nach oben"
-  },
 
-  "footer": {
-    "imprint": "Impressum",
-    "privacyPolicy": "Datenschutzerklärung"
-  },
+    "contact": {
+      "headline": "Kontaktiere mich",
+      "description": "Ich freue mich über spannende Jobangebote oder Projektanfragen – besonders im Bereich Webentwicklung. Mit Kreativität, Zuverlässigkeit und einem geschulten Blick fürs Detail bringe ich echten Mehrwert in jedes Team. Lass uns gemeinsam Großartiges schaffen!",
+      "emailLabel": "E-Mail",
+      "phoneLabel": "Tel",
+      "phoneNumber": "Auf Anfrage",
+      "workTogether": "Lass uns zusammenarbeiten!",
+      "form": {
+        "nameLabel": "Name",
+        "namePlaceholder": "Dein Name..",
+        "nameError": "Bitte gib einen Namen ein",
+        "emailLabel": "Deine E-Mail",
+        "emailPlaceholder": "Deine E-Mail..",
+        "emailError": "Bitte gib eine gültige E-Mail ein",
+        "messageLabel": "Deine Nachricht",
+        "messagePlaceholder": "Schreibe etwas..",
+        "messageError": "Bitte gib eine Nachricht ein",
+        "privacyTextOne": "Ich habe die ",
+        "privacyLink": "Datenschutzerklärung",
+        "privacyTextTwo": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
+        "submit": "Senden",
+        "successMessage": "Nachricht gesendet!"
+      },
+      "uplinkAlt": "Zurück nach oben"
+    },
 
-  "imprint": {
-    "title": "Impressum",
-    "serviceProvider": "Diensteanbieter",
-    "contactOptions": "Kontaktmöglichkeiten",
-    "onlinePresences": "Social Media und andere Onlinepräsenzen",
-    "disclaimer": "Haftungs- und Schutzrechtshinweise"
-  },
+    "footer": {
+      "imprint": "Impressum",
+      "privacyPolicy": "Datenschutzerklärung"
+    },
 
-  "privacyPolicy": {
-    "title": "Datenschutzerklärung",
-    "preamble": "Präambel",
-    "tableOfContents": "Inhaltsübersicht",
-    "responsible": "Verantwortlicher",
-    "processingOverview": "Übersicht der Verarbeitungen",
-    "legalBasis": "Maßgebliche Rechtsgrundlagen",
-    "securityMeasures": "Sicherheitsmaßnahmen",
-    "dataTransfer": "Übermittlung von personenbezogenen Daten",
-    "hosting": "Bereitstellung des Onlineangebots und Webhosting",
-    "cookies": "Einsatz von Cookies",
-    "contactManagement": "Kontakt- und Anfrageverwaltung",
-    "socialMedia": "Präsenzen in sozialen Netzwerken (Social Media)"
+    "imprint": {
+      "title": "Impressum",
+      "serviceProvider": "Diensteanbieter",
+      "contactOptions": "Kontaktmöglichkeiten",
+      "onlinePresences": "Social Media und andere Onlinepräsenzen",
+      "disclaimer": "Haftungs- und Schutzrechtshinweise"
+    },
+
+    "privacyPolicy": {
+      "title": "Datenschutzerklärung",
+      "preamble": "Präambel",
+      "tableOfContents": "Inhaltsübersicht",
+      "responsible": "Verantwortlicher",
+      "processingOverview": "Übersicht der Verarbeitungen",
+      "legalBasis": "Maßgebliche Rechtsgrundlagen",
+      "securityMeasures": "Sicherheitsmaßnahmen",
+      "dataTransfer": "Übermittlung von personenbezogenen Daten",
+      "hosting": "Bereitstellung des Onlineangebots und Webhosting",
+      "cookies": "Einsatz von Cookies",
+      "contactManagement": "Kontakt- und Anfrageverwaltung",
+      "socialMedia": "Präsenzen in sozialen Netzwerken (Social Media)"
+    }
   }
 }
