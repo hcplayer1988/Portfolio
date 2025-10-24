@@ -76,6 +76,10 @@ app-header {
   display: flex;
   justify-content: center;
   align-items: end;
+
+  img {
+    height: 750px;
+  }
 }
 
 .right {
@@ -149,7 +153,7 @@ app-header {
 }
 
 .socialmedia a {
-  >img {
+  > img {
     &:hover {
       cursor: pointer;
       background-color: whitesmoke;
@@ -216,8 +220,7 @@ app-header {
 
   .hero_img {
     > img {
-      width: 550px;
-      height: 600px;
+      height: 700px;
     }
   }
 
@@ -247,8 +250,7 @@ app-header {
 
   .hero_img {
     > img {
-      width: 400px;
-      height: 450px;
+      height: 550px;
       padding-bottom: 0;
       padding-left: 24px;
       transition: opacity 0.3s ease;
@@ -332,8 +334,7 @@ app-header {
 
   .hero_img {
     > img {
-      width: 430px;
-      height: 530px;
+      height: 500px;
       padding-left: 12px;
       padding-bottom: 40px;
       padding-left: 24px;
@@ -531,5 +532,39 @@ app-header {
 
   h2 {
     font-size: 20px !important;
+  }
+}
+
+@media (max-height: 900px) {
+  .name {
+    h1 {
+      font-size: 56px;
+    }
+  }
+
+  .job {
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .hero_img {
+    > img {
+      height: 400px;
+    }
+  }
+
+  .bg-ellipse {
+    height: 450px;
+    width: 450px;
+  }
+
+  .middle {
+    padding-bottom: 20px;
+  }
+
+  .up {
+    padding-top: 24px;
+    padding-bottom: 20px;
   }
 }

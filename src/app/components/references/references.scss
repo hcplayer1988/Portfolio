@@ -34,7 +34,7 @@ main {
 }
 
 .scrolling_wrapper {
-  animation: scroll 25s linear infinite;
+  animation: scroll 60s linear infinite;
   display: flex;
   width: max-content;
 }
@@ -146,7 +146,7 @@ main {
   .content {
     width: 500px;
   }
-  
+
   .scrolling_content {
     width: 500px;
   }
