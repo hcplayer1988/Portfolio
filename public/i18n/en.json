@@ -73,25 +73,21 @@
       "project": "Project:"
     },
     "list": {
-      "sahraMueller": {
+      "calvinHanisch": {
         "project": "Join",
-        "text": "Falko is a reliable and friendly person. Works in a structured way and writes clear code. I recommend her as a colleague."
+        "text": "Falko played a key role in our Join project. He handled complex components independently, kept track of how everything fit together, and helped the team stay aligned. Approachable and reliable, he contributed to important decisions, offered guidance in meetings, and ensured teamwork ran efficiently throughout the project."
       },
-      "jonasBecker": {
+      "madinaAskar": {
         "project": "Join",
-        "text": "Working with Falko was a pleasure. He’s focused, detail-oriented, and a great communicator."
+        "text": " Falko contributed to key parts of the application, including the contact management and task view features. In later sprints, he developed the start screen and animations, adding an engaging and dynamic user experience. He also supported his teammates with additional frontend sections and authentication features. Falko showed great teamwork, initiative, and a strong willingness to assist others whenever needed."
       },
-      "leaSchmidt": {
+      "christopKonst": {
         "project": "Join",
-        "text": "Falko brings great energy to the team and always delivers on time. His code is clean and well-documented."
+        "text": "Falko impressed in our group projects with his solid expertise in programming, particularly in JavaScript, TypeScript, and Angular. He consistently worked reliably and demonstrated a high level of responsibility and punctuality. In the Join project, Falko was able to apply his technical skills effectively and played a key role in ensuring the project was successfully implemented and brought to completion."
       },
-      "tomRichter": {
+      "phillipSchulze": {
         "project": "Join",
-        "text": "Falko is a true team player. He’s proactive and always ready to help others improve."
-      },
-      "annaWeber": {
-        "project": "Join",
-        "text": "His frontend skills are top-notch. Falko has a great eye for design and usability."
+        "text": "Falko K. consistently proved to be a highly committed and responsible team member. He showed great interest in actively contributing to problem-solving and regularly offered constructive suggestions. His reliability regarding agreements and punctuality was exemplary, and he demonstrated an excellent understanding of the tasks at hand. In cases of uncertainty, he always asked proactively, which ensured smooth collaboration and effectively prevented misunderstandings."
       }
     }
   },

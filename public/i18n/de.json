@@ -72,27 +72,22 @@
       "project": "Projekt:"
     },
     "list": {
-      "sahraMueller": {
+      "calvinHanisch": {
         "project": "Join",
-        "text": "Falko ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt klaren, sauberen Code. Ich empfehle ihn als Kollegen weiter."
+        "text": "Falko spielte eine zentrale Rolle in unserem Join-Projekt. Er bearbeitete komplexe Komponenten eigenständig, behielt stets den Überblick über das Zusammenspiel aller Elemente und unterstützte das Team dabei, abgestimmt zu arbeiten. Zugänglich und zuverlässig brachte er sich in wichtige Entscheidungen ein, gab in Meetings wertvolle Impulse und sorgte dafür, dass die Teamarbeit während des gesamten Projekts reibungslos verlief."
       },
-      "jonasBecker": {
+      "madinaAskar": {
         "project": "Join",
-        "text": "Die Zusammenarbeit mit Falko war eine Freude. Er ist fokussiert, detailorientiert und kommuniziert klar und effektiv."
+        "text": "Falko hat maßgeblich zu zentralen Bereichen der Anwendung beigetragen, darunter das Kontaktmanagement und die Aufgabenansicht. In späteren Sprints entwickelte er den Startbildschirm sowie Animationen, die das Nutzererlebnis ansprechend und dynamisch gestalteten. Darüber hinaus unterstützte er seine Teammitglieder bei zusätzlichen Frontend-Abschnitten und Funktionen zur Authentifizierung. Falko zeigte hervorragende Teamarbeit, Eigeninitiative und eine ausgeprägte Bereitschaft, anderen jederzeit zu helfen."
       },
-      "leaSchmidt": {
+      "christopKonst": {
         "project": "Join",
-        "text": "Falko bringt großartige Energie ins Team und liefert stets pünktlich. Sein Code ist sauber und gut dokumentiert."
+        "text": "Falko überzeugte in unseren Gruppenarbeiten durch sein fundiertes Wissen in der Programmierung, insbesondere in JavaScript, TypeScript und Angular. Er arbeitete stets zuverlässig und zeigte ein hohes Maß an Verantwortungsbewusstsein und Pünktlichkeit. Im Projekt Join konnte Falko sein technisches Können gezielt einsetzen und maßgeblich dazu beitragen, dass das Projekt erfolgreich umgesetzt und zum Ziel geführt wurde."
       },
-      "tomRichter": {
+      "phillipSchulze": {
         "project": "Join",
-        "text": "Falko ist ein echter Teamplayer. Er handelt vorausschauend und ist stets bereit, anderen bei ihrer Weiterentwicklung zu helfen."
-      },
-      "annaWeber": {
-        "project": "Join",
-        "text": "Seine Frontend-Fähigkeiten sind erstklassig. Falko hat ein ausgezeichnetes Gespür für Design und Benutzerfreundlichkeit."
+        "text": "Falko K. hat sich stets als äußerst engagiertes und verantwortungsbewusstes Teammitglied erwiesen. Er zeigte großes Interesse daran, aktiv an der Lösungsfindung teilzuhaben und brachte sich stets konstruktiv mit eigenen Vorschlägen ein. Seine Zuverlässigkeit in Bezug auf Absprachen und Pünktlichkeit war vorbildlich, und er bewies ein ausgezeichnetes Verständnis für die Aufgaben. Bei Unklarheiten fragte er stets proaktiv nach, was eine reibungslose Zusammenarbeit garantierte und Missverständnisse effektiv vermied."
       }
-    }
   },
 
   "contact": {
