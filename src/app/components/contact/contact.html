@@ -34,7 +34,7 @@
     <div class="work_together">
       <span>{{ "contact.workTogether" | translate }}</span>
     </div>
-    <div class="name_email_message">
+    <div class="name_email_message" data-aos="fade-up" data-aos-duration="2000">
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="name_email">
           <div class="name_input">
@@ -113,8 +113,10 @@
             alt="Privacy Checkbox"
           />
           <span>
-            {{ "contact.form.privacyTextOne" | translate }} 
-              <a id="blue" [routerLink]="['/imprint']">{{ "contact.form.privacyLink" | translate }}</a>
+            {{ "contact.form.privacyTextOne" | translate }}
+            <a id="blue" [routerLink]="['/imprint']">{{
+              "contact.form.privacyLink" | translate
+            }}</a>
             {{ "contact.form.privacyTextTwo" | translate }}
           </span>
         </div>

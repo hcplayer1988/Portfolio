@@ -1,8 +1,8 @@
 <main id="my_projects">
   <div class="content">
-    <h1>{{ "myProjects.h1" | translate }}</h1>
+    <h1 data-aos="fade-right">{{ "myProjects.h1" | translate }}</h1>
 
-    <div class="titles">
+    <div class="titles" data-aos="fade-left">
       <div
         class="first_projekt_title"
         [class.selected]="activeProject === 'elPollo'"
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="bg_grey">
+  <div class="bg_grey" data-aos="flip-right">
     <div class="project_container">
       <div class="infos el_pollo_loco" *ngIf="activeProject === 'elPollo'">
         <div class="info_box">

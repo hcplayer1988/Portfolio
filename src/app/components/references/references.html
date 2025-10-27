@@ -1,15 +1,19 @@
 <main id="references_section">
   <div class="content">
     <div class="headline">
-      <span>{{ 'references.headline' | translate }}</span>
+      <span>{{ "references.headline" | translate }}</span>
     </div>
 
     <div class="headline_mobile">
-      <span class="blue_font">{{ 'references.headlineMobile.blue' | translate }}</span>
-      <span class="white_font">{{ 'references.headlineMobile.white' | translate }}</span>
+      <span class="blue_font">{{
+        "references.headlineMobile.blue" | translate
+      }}</span>
+      <span class="white_font">{{
+        "references.headlineMobile.white" | translate
+      }}</span>
     </div>
 
-    <div class="references" >
+    <div class="references">
       <div class="scrolling_wrapper">
         <div class="scrolling_content">
           <div class="reference_bg" *ngFor="let ref of references">
@@ -17,28 +21,18 @@
               <div class="name">{{ ref.name }}</div>
               <div class="project">
                 <span>Project: </span>
-                <span class="project_name">{{ 'references.list.' + ref.key + '.project' | translate }}</span>
+                <span class="project_name">{{
+                  "references.list." + ref.key + ".project" | translate
+                }}</span>
               </div>
               <div class="reference_text">
-                {{ 'references.list.' + ref.key + '.text' | translate }}
+                {{ "references.list." + ref.key + ".text" | translate }}
               </div>
               <div class="social_link">
-                <a [href]="ref.link" target="_blank">LinkedIn Profile</a>
-              </div>
-            </div>
-          </div>
-          <div class="reference_bg" *ngFor="let ref of references">
-            <div class="reference">
-              <div class="name">{{ ref.name }}</div>
-              <div class="project">
-                <span>Project: </span>
-                <span class="project_name">{{ 'references.list.' + ref.key + '.project' | translate }}</span>
-              </div>
-              <div class="reference_text">
-                {{ 'references.list.' + ref.key + '.text' | translate }}
-              </div>
-              <div class="social_link">
-                <a [href]="ref.link" target="_blank">LinkedIn Profile</a>
+                <ng-container *ngIf="ref.link; else noLink">
+                  <a [href]="ref.link" target="_blank">LinkedIn Profile</a>
+                </ng-container>
+                <ng-template #noLink></ng-template>
               </div>
             </div>
           </div>
