@@ -536,7 +536,7 @@ app-header {
   }
 }
 
-@media (max-height: 900px) {
+@media (max-height: 990px) {
   .name {
     h1 {
       font-size: 56px;
@@ -568,11 +568,37 @@ app-header {
     padding-top: 24px;
     padding-bottom: 20px;
   }
+
+  @media (max-width: 500px) {
+    .hero_img {
+      img {
+        height: 380px;
+      }
+    }
+
+    .bg-ellipse {
+      height: 390px;
+      width: 390px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .hero_img {
+      img {
+        height: 300px;
+      }
+    }
+
+    .bg-ellipse {
+      height: 300px;
+      width: 300px;
+    }
+  }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 720px) {
   .hero_img {
-    > img {
+    img {
       height: 300px;
     }
   }

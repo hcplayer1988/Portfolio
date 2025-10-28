@@ -41,6 +41,7 @@
   width: 1440px;
 }
 
+$breakpoint-xs: 450px;
 $breakpoint-sm: 500px;
 $breakpoint-s: 540px;
 $breakpoint-m: 775px;
@@ -49,6 +50,7 @@ $breakpoint-lg: 1125px;
 $breakpoint-xl: 1250px;
 
 @mixin respond-to($breakpoint) {
+
   @if $breakpoint == sm {
     @media (max-width: $breakpoint-sm) {
       @content;
@@ -70,6 +72,10 @@ $breakpoint-xl: 1250px;
       @content;
     }
   } @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xl) {
+      @content;
+    }
+  }  @else if $breakpoint == xs {
     @media (max-width: $breakpoint-xl) {
       @content;
     }
@@ -116,13 +122,13 @@ $height-md: 800px;
     @media (max-height: $height-md) {
       @content;
     }
-  } 
+  }
 }
 
 
 /*
 @include respond-to-height(sm) {
-  
+
 }
 
 */
