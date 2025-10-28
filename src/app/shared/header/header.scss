@@ -74,6 +74,7 @@ header {
     color: #262e34;
     border: none;
     @include backgroundBlue;
+    cursor: pointer;
 
     &:hover {
       @include whiteFont;
@@ -197,6 +198,7 @@ header {
         @include backgroundBlue;
         &:hover {
           color: whitesmoke;
+            cursor: pointer;
         }
       }
     }
