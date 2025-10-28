@@ -89,60 +89,60 @@
         "project": "Join",
         "text": "Falko K. hat sich stets als äußerst engagiertes und verantwortungsbewusstes Teammitglied erwiesen. Er zeigte großes Interesse daran, aktiv an der Lösungsfindung teilzuhaben und brachte sich stets konstruktiv mit eigenen Vorschlägen ein. Seine Zuverlässigkeit in Bezug auf Absprachen und Pünktlichkeit war vorbildlich, und er bewies ein ausgezeichnetes Verständnis für die Aufgaben. Bei Unklarheiten fragte er stets proaktiv nach, was eine reibungslose Zusammenarbeit garantierte und Missverständnisse effektiv vermied."
       }
-    },
-
-    "contact": {
-      "headline": "Kontaktiere mich",
-      "description": "Ich freue mich über spannende Jobangebote oder Projektanfragen – besonders im Bereich Webentwicklung. Mit Kreativität, Zuverlässigkeit und einem geschulten Blick fürs Detail bringe ich echten Mehrwert in jedes Team. Lass uns gemeinsam Großartiges schaffen!",
-      "emailLabel": "E-Mail",
-      "phoneLabel": "Tel",
-      "phoneNumber": "Auf Anfrage",
-      "workTogether": "Lass uns zusammenarbeiten!",
-      "form": {
-        "nameLabel": "Name",
-        "namePlaceholder": "Dein Name..",
-        "nameError": "Bitte gib einen Namen ein",
-        "emailLabel": "Deine E-Mail",
-        "emailPlaceholder": "Deine E-Mail..",
-        "emailError": "Bitte gib eine gültige E-Mail ein",
-        "messageLabel": "Deine Nachricht",
-        "messagePlaceholder": "Schreibe etwas..",
-        "messageError": "Bitte gib eine Nachricht ein",
-        "privacyTextOne": "Ich habe die ",
-        "privacyLink": "Datenschutzerklärung",
-        "privacyTextTwo": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
-        "submit": "Senden",
-        "successMessage": "Nachricht gesendet!"
-      },
-      "uplinkAlt": "Zurück nach oben"
-    },
-
-    "footer": {
-      "imprint": "Impressum",
-      "privacyPolicy": "Datenschutzerklärung"
-    },
-
-    "imprint": {
-      "title": "Impressum",
-      "serviceProvider": "Diensteanbieter",
-      "contactOptions": "Kontaktmöglichkeiten",
-      "onlinePresences": "Social Media und andere Onlinepräsenzen",
-      "disclaimer": "Haftungs- und Schutzrechtshinweise"
-    },
-
-    "privacyPolicy": {
-      "title": "Datenschutzerklärung",
-      "preamble": "Präambel",
-      "tableOfContents": "Inhaltsübersicht",
-      "responsible": "Verantwortlicher",
-      "processingOverview": "Übersicht der Verarbeitungen",
-      "legalBasis": "Maßgebliche Rechtsgrundlagen",
-      "securityMeasures": "Sicherheitsmaßnahmen",
-      "dataTransfer": "Übermittlung von personenbezogenen Daten",
-      "hosting": "Bereitstellung des Onlineangebots und Webhosting",
-      "cookies": "Einsatz von Cookies",
-      "contactManagement": "Kontakt- und Anfrageverwaltung",
-      "socialMedia": "Präsenzen in sozialen Netzwerken (Social Media)"
     }
+  },
+
+  "contact": {
+    "headline": "Kontaktiere mich",
+    "description": "Ich freue mich über spannende Jobangebote oder Projektanfragen – besonders im Bereich Webentwicklung. Mit Kreativität, Zuverlässigkeit und einem geschulten Blick fürs Detail bringe ich echten Mehrwert in jedes Team. Lass uns gemeinsam Großartiges schaffen!",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Tel",
+    "phoneNumber": "Auf Anfrage",
+    "workTogether": "Lass uns zusammenarbeiten!",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Dein Name..",
+      "nameError": "Bitte gib einen Namen ein",
+      "emailLabel": "Deine E-Mail",
+      "emailPlaceholder": "Deine E-Mail..",
+      "emailError": "Bitte gib eine gültige E-Mail ein",
+      "messageLabel": "Deine Nachricht",
+      "messagePlaceholder": "Schreibe etwas..",
+      "messageError": "Bitte gib eine Nachricht ein",
+      "privacyTextOne": "Ich habe die ",
+      "privacyLink": "Datenschutzerklärung",
+      "privacyTextTwo": "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu.",
+      "submit": "Senden",
+      "successMessage": "Nachricht gesendet!"
+    },
+    "uplinkAlt": "Zurück nach oben"
+  },
+
+  "footer": {
+    "imprint": "Impressum",
+    "privacyPolicy": "Datenschutzerklärung"
+  },
+
+  "imprint": {
+    "title": "Impressum",
+    "serviceProvider": "Diensteanbieter",
+    "contactOptions": "Kontaktmöglichkeiten",
+    "onlinePresences": "Social Media und andere Onlinepräsenzen",
+    "disclaimer": "Haftungs- und Schutzrechtshinweise"
+  },
+
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "preamble": "Präambel",
+    "tableOfContents": "Inhaltsübersicht",
+    "responsible": "Verantwortlicher",
+    "processingOverview": "Übersicht der Verarbeitungen",
+    "legalBasis": "Maßgebliche Rechtsgrundlagen",
+    "securityMeasures": "Sicherheitsmaßnahmen",
+    "dataTransfer": "Übermittlung von personenbezogenen Daten",
+    "hosting": "Bereitstellung des Onlineangebots und Webhosting",
+    "cookies": "Einsatz von Cookies",
+    "contactManagement": "Kontakt- und Anfrageverwaltung",
+    "socialMedia": "Präsenzen in sozialen Netzwerken (Social Media)"
   }
 }
