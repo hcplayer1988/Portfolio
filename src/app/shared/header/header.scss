@@ -68,7 +68,7 @@ header {
   justify-content: space-around;
   width: 60%;
   > button {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
     text-decoration: none;
     color: #262e34;
@@ -111,9 +111,9 @@ header {
 }
 
 // Media Queries
-@include respond-to(m) {
+@include respond-to(md) {
   .section_nav {
-    > a {
+    button {
       font-size: 20px;
     }
   }
