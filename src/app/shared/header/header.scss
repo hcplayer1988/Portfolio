@@ -119,7 +119,7 @@ header {
   }
 }
 
-@include respond-to(s) {
+@include respond-to(m) {
   header {
     @include backgroundDark;
   }

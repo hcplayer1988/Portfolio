@@ -388,22 +388,26 @@ app-header {
 
 @include respond-to(m) {
   .bg-ellipse {
-    height: 540px;
-    width: 540px;
+    height: 440px;
+    width: 440px;
     padding-top: 64px;
   }
 
   .hero_img {
     > img {
-      height: 500px;
+      height: 450px;
     }
+  }
+
+  .up {
+    display: none;
   }
 }
 
 @include respond-to(s) {
   .bg-ellipse {
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     padding-top: 64px;
   }
 
@@ -563,5 +567,18 @@ app-header {
   .up {
     padding-top: 24px;
     padding-bottom: 20px;
+  }
+}
+
+@media (max-height: 700px) {
+  .hero_img {
+    > img {
+      height: 300px;
+    }
+  }
+
+  .bg-ellipse {
+    height: 310px;
+    width: 310px;
   }
 }
