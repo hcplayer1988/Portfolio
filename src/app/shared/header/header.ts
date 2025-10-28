@@ -39,5 +39,6 @@ export class Header {
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
+    this.closeMenu();
   }
 }
