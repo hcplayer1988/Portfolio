@@ -1,7 +1,13 @@
-import { Component, signal, inject } from '@angular/core';
-import { RouterOutlet, Router, NavigationStart } from '@angular/router';
+import { Component, AfterViewInit, signal, inject } from '@angular/core';
+import {
+  RouterOutlet,
+  Router,
+  NavigationStart,
+  NavigationEnd,
+} from '@angular/router';
 import { Footer } from './shared/footer/footer';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { ViewportScroller } from '@angular/common';
 import AOS from 'aos';
 
 @Component({
@@ -10,24 +16,41 @@ import AOS from 'aos';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {
-  constructor(private router: Router) {
+export class App implements AfterViewInit {
+  protected readonly title = signal('portfolio');
+  private translate = inject(TranslateService);
+
+  constructor(
+    private router: Router,
+    private viewportScroller: ViewportScroller
+  ) {
     this.router.events.subscribe((event) => {
-      if (event instanceof NavigationStart) {
-        window.scrollTo({ top: 0 });
+      if (event instanceof NavigationEnd) {
+        const fragment = this.router.parseUrl(this.router.url).fragment;
+        if (fragment) {
+          setTimeout(() => {
+            requestAnimationFrame(() => {
+              const el = document.getElementById(fragment);
+              const header = document.querySelector('header');
+              if (el && header) {
+                const offset = header.getBoundingClientRect().height;
+                const y =
+                  el.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }
+            });
+          }, 200);
+        }
       }
     });
   }
 
-  ngOnInit() {
-    AOS.init();
+  ngAfterViewInit() {
+    setTimeout(() => AOS.init(), 500);
   }
-
-  protected readonly title = signal('portfolio');
-
-  private translate = inject(TranslateService);
 
   useLanguage(language: string): void {
     this.translate.use(language);
   }
 }
+

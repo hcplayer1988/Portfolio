@@ -2,7 +2,7 @@
   <div class="navbar">
     <div class="name">
       <div class="logo">
-        <a [routerLink]="['/']">
+        <a [routerLink]="['/']" [fragment]="'hero'">
           <img src="/imgs/icons/logo_dark.png" alt="" />
         </a>
         <span id="salutation">F.Katzer</span>
@@ -15,18 +15,26 @@
       </div>
     </div>
     <div class="section_nav">
-      <button (click)="scrollTo('wy_me')">
-          {{ "header.whyMe" | translate }}
-        </button>
-        <button (click)="scrollTo('my_skills')">
-          {{ "header.skills" | translate }}
-        </button>
-        <button (click)="scrollTo('my_projects')">
-          {{ "header.projects" | translate }}
-        </button>
-        <button (click)="scrollTo('contact')">
-          {{ "header.contact" | translate }}
-        </button>
+      <button [routerLink]="['/']" [fragment]="'why_me'" (click)="closeMenu()">
+        {{ "header.whyMe" | translate }}
+      </button>
+      <button
+        [routerLink]="['/']"
+        [fragment]="'my_skills'"
+        (click)="closeMenu()"
+      >
+        {{ "header.skills" | translate }}
+      </button>
+      <button
+        [routerLink]="['/']"
+        [fragment]="'my_projects'"
+        (click)="closeMenu()"
+      >
+        {{ "header.projects" | translate }}
+      </button>
+      <button [routerLink]="['/']" [fragment]="'contact'" (click)="closeMenu()">
+        {{ "header.contact" | translate }}
+      </button>
     </div>
     <div class="language">
       <button
@@ -56,16 +64,32 @@
     </div>
     <div class="overlay_menu" *ngIf="isMenuOpen">
       <nav>
-        <button (click)="scrollTo('wy_me')">
+        <button
+          [routerLink]="['/']"
+          [fragment]="'why_me'"
+          (click)="closeMenu()"
+        >
           {{ "header.whyMe" | translate }}
         </button>
-        <button (click)="scrollTo('my_skills')">
+        <button
+          [routerLink]="['/']"
+          [fragment]="'my_skills'"
+          (click)="closeMenu()"
+        >
           {{ "header.skills" | translate }}
         </button>
-        <button (click)="scrollTo('my_projects')">
+        <button
+          [routerLink]="['/']"
+          [fragment]="'my_projects'"
+          (click)="closeMenu()"
+        >
           {{ "header.projects" | translate }}
         </button>
-        <button (click)="scrollTo('contact')">
+        <button
+          [routerLink]="['/']"
+          [fragment]="'contact'"
+          (click)="closeMenu()"
+        >
           {{ "header.contact" | translate }}
         </button>
       </nav>

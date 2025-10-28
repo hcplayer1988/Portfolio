@@ -8,6 +8,6 @@ export const routes: Routes = [
 ];
 
 export const routing = RouterModule.forRoot(routes, {
-  scrollPositionRestoration: 'top',
-  anchorScrolling: 'enabled'
+  scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'disabled'
 });
