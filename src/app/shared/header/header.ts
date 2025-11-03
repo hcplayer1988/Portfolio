@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Output, EventEmitter } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { LanguageService } from '../../services/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { ScrollService } from '../../services/scroll.service';
@@ -16,7 +16,8 @@ export class Header {
 
   constructor(
     private languageService: LanguageService,
-    private scrollService: ScrollService
+    private scrollService: ScrollService,
+    private router: Router
   ) {}
 
   changeLanguage(lang: string): void {
@@ -39,6 +40,10 @@ export class Header {
   }
 
   navigateTo(sectionId: string): void {
-    this.scrollService.scrollToSection(sectionId);
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        this.scrollService.scrollToSection(sectionId);
+      }, 100);
+    });
   }
 }

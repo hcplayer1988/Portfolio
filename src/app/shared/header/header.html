@@ -8,23 +8,23 @@
         <span id="salutation">F.Katzer</span>
         <span id="job_title">developer</span>
       </div>
-      <div class="logo_mobile">
+      <div class="logo_mobile" (click)="navigateTo('hero')">
         <img src="./imgs/icons/logo_icon.png" alt="" />
         <span id="salutation">F.Katzer</span>
         <span id="job_title">developer</span>
       </div>
     </div>
     <div class="section_nav">
-      <button (click)="navigateTo('why_me')">
+      <button [routerLink]="['/']" (click)="navigateTo('why_me')">
         {{ "header.whyMe" | translate }}
       </button>
-      <button (click)="navigateTo('my_skills')">
+      <button [routerLink]="['/']" (click)="navigateTo('my_skills')">
         {{ "header.skills" | translate }}
       </button>
-      <button (click)="navigateTo('my_projects')">
+      <button [routerLink]="['/']" (click)="navigateTo('my_projects')">
         {{ "header.projects" | translate }}
       </button>
-      <button (click)="navigateTo('contact')">
+      <button [routerLink]="['/']" (click)="navigateTo('contact')">
         {{ "header.contact" | translate }}
       </button>
     </div>
@@ -104,16 +104,3 @@
     </div>
   </div>
 </header>
-
-<!-- <button [routerLink]="['/']" (click)="scrollTo('why_me')">
-        {{ "header.whyMe" | translate }}
-      </button>
-      <button [routerLink]="['/']" (click)="scrollTo('my_skills')">
-        {{ "header.skills" | translate }}
-      </button> -->
-<!-- <button [routerLink]="['/']" (click)="scrollTo('my_projects')">
-        {{ "header.projects" | translate }}
-      </button>
-      <button [routerLink]="['/']" (click)="scrollTo('contact')">
-        {{ "header.contact" | translate }}
-      </button> -->

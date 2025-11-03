@@ -41,9 +41,9 @@ export class ScrollService {
 
       Hero.forceSticky = false;
 
-      console.log(
-        `Scroll to ${sectionId}, offset: ${adjustedOffset}, sticky forced: ${Hero.forceSticky}`
-      );
+      // console.log(
+      //   `Scroll to ${sectionId}, offset: ${adjustedOffset}, sticky forced: ${Hero.forceSticky}`
+      // );
     }, delay);
   }
 
