@@ -18,6 +18,11 @@ h1 {
   scroll-margin-top: 165px;
 }
 
+#why_me {
+  position: relative;
+  padding-top: 60px;
+}
+
 .content {
   @include centerCenter;
   flex-direction: column;

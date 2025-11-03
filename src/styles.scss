@@ -9,6 +9,14 @@
   scrollbar-color: #89bcd9 #dddddd00;
 }
 
+#hero,
+#why_me,
+#my_skills,
+#my_projects,
+#contact {
+  scroll-margin-top: 110px;
+}
+
 html,
 body {
   overflow-x: hidden;

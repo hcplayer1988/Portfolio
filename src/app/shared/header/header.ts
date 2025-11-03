@@ -3,6 +3,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LanguageService } from '../../services/language.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { ScrollService } from '../../services/scroll.service';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,10 @@ import { TranslateModule } from '@ngx-translate/core';
 export class Header {
   currentLang = 'en';
 
-  constructor(private languageService: LanguageService) {}
+  constructor(
+    private languageService: LanguageService,
+    private scrollService: ScrollService
+  ) {}
 
   changeLanguage(lang: string): void {
     this.currentLang = lang;
@@ -34,11 +38,7 @@ export class Header {
     this.menuToggled.emit(false);
   }
 
-  scrollTo(id: string): void {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-    this.closeMenu();
+  navigateTo(sectionId: string): void {
+    this.scrollService.scrollToSection(sectionId);
   }
 }

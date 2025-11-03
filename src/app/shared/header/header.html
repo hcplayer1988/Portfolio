@@ -2,7 +2,7 @@
   <div class="navbar">
     <div class="name">
       <div class="logo">
-        <a [routerLink]="['/']" [fragment]="'hero'">
+        <a (click)="navigateTo('hero')">
           <img src="/imgs/icons/logo_dark.png" alt="" />
         </a>
         <span id="salutation">F.Katzer</span>
@@ -15,24 +15,16 @@
       </div>
     </div>
     <div class="section_nav">
-      <button [routerLink]="['/']" [fragment]="'why_me'" (click)="closeMenu()">
+      <button (click)="navigateTo('why_me')">
         {{ "header.whyMe" | translate }}
       </button>
-      <button
-        [routerLink]="['/']"
-        [fragment]="'my_skills'"
-        (click)="closeMenu()"
-      >
+      <button (click)="navigateTo('my_skills')">
         {{ "header.skills" | translate }}
       </button>
-      <button
-        [routerLink]="['/']"
-        [fragment]="'my_projects'"
-        (click)="closeMenu()"
-      >
+      <button (click)="navigateTo('my_projects')">
         {{ "header.projects" | translate }}
       </button>
-      <button [routerLink]="['/']" [fragment]="'contact'" (click)="closeMenu()">
+      <button (click)="navigateTo('contact')">
         {{ "header.contact" | translate }}
       </button>
     </div>
@@ -112,3 +104,16 @@
     </div>
   </div>
 </header>
+
+<!-- <button [routerLink]="['/']" (click)="scrollTo('why_me')">
+        {{ "header.whyMe" | translate }}
+      </button>
+      <button [routerLink]="['/']" (click)="scrollTo('my_skills')">
+        {{ "header.skills" | translate }}
+      </button> -->
+<!-- <button [routerLink]="['/']" (click)="scrollTo('my_projects')">
+        {{ "header.projects" | translate }}
+      </button>
+      <button [routerLink]="['/']" (click)="scrollTo('contact')">
+        {{ "header.contact" | translate }}
+      </button> -->

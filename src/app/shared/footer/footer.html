@@ -4,13 +4,13 @@
       <a [routerLink]="['/imprint']" fragment="top">{{
         "footer.imprint" | translate
       }}</a>
-      <a [routerLink]="['/imprint']">{{
+      <a [routerLink]="['/imprint']" fragment="privacy_policy">{{
         "footer.privacyPolicy" | translate
       }}</a>
       <span>© Falko Katzer 2025</span>
     </div>
     <div class="name">
-      <a [routerLink]="['/']">
+      <a [routerLink]="['/']" [fragment]="'hero'">
         <img src="/imgs/icons/logo_dark.png" alt="" />
       </a>
       <span id="salutation">F.Katzer</span>
@@ -30,7 +30,7 @@
   </div>
   <div class="content_mobile">
     <div class="name">
-      <a [routerLink]="['/']">
+      <a [routerLink]="['/']" [fragment]="'hero'">
         <img src="/imgs/icons/logo_dark.png" alt="" />
       </a>
       <span id="salutation">F.Katzer</span>
@@ -52,7 +52,7 @@
         <a [routerLink]="['/imprint']" fragment="top">{{
           "footer.imprint" | translate
         }}</a>
-        <a [routerLink]="['/imprint']">{{
+        <a [routerLink]="['/imprint']" fragment="privacy_policy">{{
           "footer.privacyPolicy" | translate
         }}</a>
       </div>
@@ -60,3 +60,4 @@
     </div>
   </div>
 </footer>
+privacy_policy

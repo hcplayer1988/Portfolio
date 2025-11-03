@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
+  overflow-y: none;
+  overflow-x: none;
 }
 
 .title {
@@ -200,8 +202,12 @@ app-header {
   bottom: 0;
 }
 
-.arrow_down a {
-  > img {
+.arrow_down button {
+  background-color: #252d33;
+  border: none;
+  cursor: pointer;
+
+  img {
     &:hover {
       background-color: #3f4346;
       border-radius: 30px;
@@ -328,9 +334,14 @@ app-header {
     text-align: center;
   }
 
+  .bg {
+    width: 400px;
+    height: 600px;
+  }
+
   .bg-ellipse {
-    height: 550px;
-    width: 550px;
+    height: 520px;
+    width: 520px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -346,9 +357,9 @@ app-header {
   }
 
   .hero_img {
-    > img {
+    img {
       height: 500px;
-      padding: 0px 0px 26px 20px;
+      padding: 0px 0px 1px 36px;
     }
   }
 
@@ -406,7 +417,7 @@ app-header {
   .hero_img {
     img {
       height: 400px;
-      padding: 0px 0px 20px 20px;
+      padding: 0px 0px 1px 30px;
     }
   }
 
@@ -425,7 +436,7 @@ app-header {
   .hero_img {
     img {
       height: 380px;
-      padding: 0px 0px 18px 20px;
+      padding: 0px 0px 1px 28px;
     }
   }
 
@@ -479,7 +490,7 @@ app-header {
   .hero_img {
     img {
       height: 290px;
-      padding: 0px 0px 20px 20px;
+      padding: 0px 0px 1px 20px;
     }
   }
 }
